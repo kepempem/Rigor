@@ -64,14 +64,14 @@ $$
 The zero product property of a field is:
 
 $$
-\label{eqn:zero_product_property}
+\label{eqn:zero_product_property}\tag{ZPP}
 \forall a, b \in F: a \cdot b = 0 \implies a = 0 \lor b = 0
 $$
 
 In order to prove this, one may prove the following:
 
 $$
-\label{eqn:product_not_zero}
+\label{eqn:product_not_zero}\tag{PNZ}
 \forall a, b \in F \land a,b \neq 0 \implies a \cdot b \neq 0
 $$
 
@@ -126,7 +126,7 @@ One may then observe that $a + \left(-a\right) = 0$
 and hence, By the singularity of the additive inverse element of $a$:
 
 $$
-\label{eqn:general_additive_inverse}
+\label{eqn:general_additive_inverse}\tag{GAI}
 -a = \left(-1\right) \cdot a
 $$
 
