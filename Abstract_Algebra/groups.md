@@ -5,9 +5,9 @@ A set $G$ and a binary operation $\ast$ on $G$ form an Algebraic Structure calle
 * $\ast$ has an identity element.
 * Every element of $G$ has an inverse element.
 
-
 If $G$ and $\ast$ form a group, one may write:
 $\left(G, \ast\right)$ is a group.
+
 
 $$
 \begin{split}
@@ -34,6 +34,7 @@ Therefore, $e = q$, a contradiction to one's assumption that $e \neq q$.
 Therefore, in any group $\left(G, \ast \right)$ there is only one identity element,
 which can be called <b>The</b> identity element. $\blacksquare$
 
+
 $$
 \exists! \; e \in G: \forall a \in G: a \ast e = e \ast a = a
 $$
@@ -54,6 +55,8 @@ And thus: $a^{-1}_1 = a^{-1}_2$.
 
 Which is a contradiction to one's assumption that $a^{-1}_1 \neq a^{-1}_2$ and therefore, in any group $\left(G, \ast\right)$,
 for every element $a \in G$ there exists exactly one inverse element. $\blacksquare$
+
+
 $$
 \forall a \in G: \exists! a^{-1} \in G: a \ast a^{-1} = a^{-1} \ast a = e
 $$
@@ -69,6 +72,7 @@ This can be proved using induction on $n$:
 1. For $n = 1$: $a_1 \ast a_{1}^{-1} = e$, and therefore, $\left(a^{-1}\right)^{-1} = a$.
 2. The induction hypothesis is then, for a positive integer $k$: $\left(a_1 \ast \cdots \ast a_k \right)^{-1} = a_{k}^{-1} \ast \cdots \ast a_{1}^{-1}$. Therefore: $\left(a_1 \ast \cdots \ast a_k \right) \ast \left(a_{k}^{-1} \ast \cdots \ast a_{1}^{-1}\right) = e$.
 3. Hence, For $n = k + 1$:
+   
    $$
    \begin{split}
    			&\left(a_1 \ast \cdots \ast a_k \ast a_{k+1} \right) \ast \left(a_{k+1}^{-1} \ast a_{k}^{-1} \ast \cdots \ast a_{1}^{-1}\right) \\
@@ -80,6 +84,7 @@ This can be proved using induction on $n$:
    $$
 
 Hence, for every positive integer $n$, the inverse element of the result of opearting on $n$ elements is given by:
+
 $$
 \forall n \in \mathbb{N}: \forall a_1,\cdots, a_n \in G: \left(a_1 \ast \cdots \ast a_n\right)^{-1} = a_{n}^{-1} \ast \cdots \ast a_{1}^{-1}
 $$
@@ -159,6 +164,8 @@ are bijections, their composition is also a bijection $\left[ \sigma_1 \circ \si
 and thus, it is a permutation of $X$ which implies that $\sigma_1 \circ \sigma_2 \in S_{\small X}$.
 
 Let $\sigma_1, \sigma_2, \sigma_3 \in S_{\small X}$. Then:
+
+
 $$
 \begin{split}
 	\forall x \in X: \left[ \sigma_1 \circ \left( \sigma_2 \circ \sigma_3 \right) \right]\left(x\right) &= \sigma_1\left( \left[\sigma_2 \circ \sigma_3\right]\left(x\right) \right) \\
@@ -172,6 +179,8 @@ which implies that $\circ$ is associative under $S_{\small X}$.
 
 The identity function of $X$, $\mathrm{id}_X: X \rightarrow X$, is a bijection.
 Hence: $\mathrm{id}_X \in S_{\small X}$. In addition:
+
+
 $$
 \begin{split}
 	\forall \sigma \in S_{\small X}: \forall x \in X: \left[ \sigma \circ \mathrm{id}_X \right] \left(x\right) &= \sigma\left(\mathrm{id}_X \left(x\right)\right) \\
@@ -191,6 +200,8 @@ To conclude: $\left( S_{\small X}, \circ \right)$ is a group and is called the S
 ## Group Isomorphism
 Let $\left(G_1, \ast\right)$ and $\left(G_2, \cdot \right)$ be groups.
 If there exists a bijective function $f: G_1 \rightarrow G_2$ such that the following holds:
+
+
 $$
 \forall x,y \in G_1: f\left(x \ast y\right) = f\left(x\right) \cdot f\left(y\right)
 $$
@@ -202,6 +213,8 @@ Let $\left(G, \ast\right)$ be a group. Then $G$ is isomorphic to a subgroup of i
 
 Let $\left(G, \ast\right)$ be a group with an identity element $e \in G$.
 In order to prove this theorem, one may define the following:
+
+
 $$
 \begin{split}
 	\forall a \in G: \; & \left[ \; \pi_a: G \rightarrow G \; \right] \\
@@ -212,6 +225,8 @@ Let $a \in G$.
 
 One may let $y_0 \in G$ and $x_0 = a^{-1} \ast y_0 \in G$.
 Then:
+
+
 $$
 \begin{split}
 	\pi_a\left(x_0\right) &= a \ast x_0 \\
@@ -225,6 +240,8 @@ Hence: $\pi_a$ is surjective.
 One may then let $x_1, x_2 \in G$ such that $x_1 \neq x_2$
 and assume that $\pi_a\left(x_1\right) = \pi_a\left(x_2\right)$.
 Then:
+
+
 $$
 \begin{split}
 	a \ast x_1 & = a \ast x_2 \\
@@ -242,6 +259,8 @@ Let $G^{\ast} = \left\{ \pi_a \; \vert \; a \in G \right\}$.
 One may observe that $G^{\ast} \subseteq S_{\small G}$.
 
 Let $a,b \in G$. Then:
+
+
 $$
 \begin{split}
 	\forall x \in G: \left[ \pi_a \circ \pi_b \right]\left(x\right) &= \pi_a\left(\pi_b\left(x\right)\right) \\
@@ -264,6 +283,8 @@ and thus, $f$ is surjective.
 
 Let $a,b \in G$ such that $a \neq b$ and assume that $f\left(a\right) = f\left(b\right)$.
 Then $\pi_a = \pi_b$ which is equivalent to:
+
+
 $$
 \begin{split}
 	\forall x \in G: & \pi_a\left(x\right) = \pi_b\left(x\right) \\
@@ -276,6 +297,8 @@ This is a contradiction and thus $f\left(a\right) \neq f\left(b\right)$.
 Thus, because $f$ is surjective and injective, it's bijective.
 
 One may then complete the proof by observing the following:
+
+
 $$
 \begin{split}
 	\forall a,b \in G: f\left(a \ast b\right) &= \pi_{a \ast b} \\
@@ -296,6 +319,8 @@ Let $\left(G_1, \ast\right)$, $\left(G_2, \cdot \right)$, and $\left(G_3,\Delta\
 
 #### Reflexivity
 In order to prove that every group $\left(G, \ast\right)$ is isomorphic to itself, one may consider the identity function $\mathrm{id}_G$. This function is bijective and the following holds:
+
+
 $$
 \begin{split}
 	\forall x,y \in G: \mathrm{id}_G\left(x \ast y\right) &= x \ast y \\
@@ -319,6 +344,8 @@ $f_{1 \rightarrow 3}$ is a function from $G_1$ to $G_3$ and because $f_{1 \right
 and $f_{2 \rightarrow 3}$ are bijective then $f_{1 \rightarrow 3}$ is bijective.
 
 One may then observe that:
+
+
 $$
 \begin{split}
 	\forall x,y \in G_1: f_{1 \rightarrow 3} \left(x \ast y\right) &= f_{2 \rightarrow 3} \left( f_{1 \rightarrow 2} \left( x \ast y \right) \right) \\
@@ -340,6 +367,8 @@ In addition, let $f: G_1 \rightarrow G_2$ be an isomorphism. Then:
 * $\forall a \in G_1: f\left(a^{-1}\right) = f\left(a\right)^{-1}$ (Where $a^{-1}$ is the inverse element of $a$ in the group $\left(G_1,\ast\right)$ and $f\left(a\right)^{-1}$ is the inverse element of $f\left(a\right)$ in the group $\left(G_2,\cdot\right)$)
 
 In order to prove this, one may first observe the following:
+
+
 $$
 \begin{split}
 	\forall a \in G_1: & f\left(a \ast e_1\right) = f\left(a\right) \cdot f\left(e_1\right) \; \land \\

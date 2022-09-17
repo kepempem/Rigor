@@ -10,6 +10,8 @@ A set $F$ and two binary operations $+$ (Called Addition) and $\cdot$ (Called Mu
 
 If $F$, $+$, and $\cdot$ form a Field, one may write:
 $\left(F, +, \cdot\right)$ is a Field.
+
+
 $$
 \begin{split}
 	&\left(F, +, \cdot\right) \text{ is a Field } \iff \\
@@ -46,6 +48,8 @@ As a consequence: $\forall a \in F: -\left(-a\right) = a$.
 
 ### 0 Is An Absorbing Element Under Multiplication
 Let $a \in F$:
+
+
 $$
 \begin{split}
 	0 \cdot a &= \left(0 \cdot a\right) + 0 \\
@@ -61,17 +65,23 @@ $$
 ### Zero Product Property
 
 The zero product property of a field is:
+
+
 $$
 \label{eqn:zero_product_property}
 \forall a, b \in F: a \cdot b = 0 \implies a = 0 \lor b = 0
 $$
 In order to prove this, one may prove the following:
+
+
 $$
 \label{eqn:product_not_zero}
 \forall a, b \in F \land a,b \neq 0 \implies a \cdot b \neq 0
 $$
 This can be proved using proof by contradiction, assume that $\exists a,b \in F \land a,b \neq 0 \land a \cdot b = 0$.
 Then:
+
+
 $$
 \begin{split}
 	& a \cdot b = 0 \\
@@ -117,6 +127,8 @@ Therefore: $\left(a \cdot 1\right) + \left(a \cdot \left(-1\right)\right) = 0$.
 Which implies: $a + \left(a \cdot \left(-1\right)\right) = 0$.
 One may then observe that $a + \left(-a\right) = 0$
 and hence, By the singularity of the additive inverse element of $a$:
+
+
 $$
 \label{eqn:general_additive_inverse}
 -a = \left(-1\right) \cdot a
@@ -131,6 +143,8 @@ This can be proved using proof by contradiction, the statement $\exists \frac{1}
 ### Addition and Multiplication of Additive Inverses
 Let $a, b \in F$.<br/>
 Adding the additive inverses of $a$ and $b$ will result in:
+
+
 $$
 \begin{split}
 	\left(-a\right) + \left(-b\right) &= \left[\left(-1\right) \cdot a\right] + \left[\left(-1\right) \cdot b\right] \\
@@ -147,6 +161,8 @@ And thus, by $\eqref{eqn:general_additive_inverse}$: $\left[\left(-1\right) \cdo
 Hence, both $1$ and $\left(-1\right) \cdot \left(-1\right)$ are additive inverses of $-1$, and therefore, by the singularity of additive inverses: $\left(-1\right) \cdot \left(-1\right) = 1$.
 
 Hence:
+
+
 $$
 \begin{split}
 	\left(-a\right) \cdot \left(-b\right) &= \left(-1\right) \cdot a \cdot \left(-1\right) \cdot b \\
@@ -156,8 +172,9 @@ $$
 \end{split}
 $$
 
-
 Furthermore:
+
+
 $$
 \begin{split}
 	a \cdot \left(-b\right) &= a \cdot \left(-1\right) \cdot b \\
@@ -169,6 +186,8 @@ $$
 ### Addition and Multiplication of Multiplicative Inverses
 Let $a, b \in F \setminus \{0\}$.<br/>
 Because $\left(F \setminus \{0\}, \cdot\right)$ is a group:
+
+
 $$
 \begin{split}
 	\frac{1}{a \cdot b} &= \frac{1}{b} \cdot \frac{1}{a}
@@ -177,6 +196,8 @@ $$
 Which is the product of the multiplicative inverses of $a$ and $b$.
 
 Hence, adding the multiplicative inverses of $a$ and $b$ will result in:
+
+
 $$
 \begin{split}
 	\frac{1}{a} + \frac{1}{b} &= \left(1 \cdot \frac{1}{a}\right) + \left(1 \cdot \frac{1}{b}\right) \\
