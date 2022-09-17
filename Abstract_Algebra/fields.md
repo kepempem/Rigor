@@ -11,7 +11,6 @@ A set $F$ and two binary operations $+$ (Called Addition) and $\cdot$ (Called Mu
 If $F$, $+$, and $\cdot$ form a Field, one may write:
 $\left(F, +, \cdot\right)$ is a Field.
 
-
 $$
 \begin{split}
 	&\left(F, +, \cdot\right) \text{ is a Field } \iff \\
@@ -26,7 +25,6 @@ $$
 	&\forall a,b,c \in F: a \cdot \left(b + c\right) = \left(a \cdot b\right) + \left(a \cdot c\right)
 \end{split}
 $$
-
 
 $a \cdot b$ is called the product of $a$ and $b$.
 
@@ -49,7 +47,6 @@ As a consequence: $\forall a \in F: -\left(-a\right) = a$.
 ### 0 Is An Absorbing Element Under Multiplication
 Let $a \in F$:
 
-
 $$
 \begin{split}
 	0 \cdot a &= \left(0 \cdot a\right) + 0 \\
@@ -66,21 +63,20 @@ $$
 
 The zero product property of a field is:
 
-
 $$
 \label{eqn:zero_product_property}
 \forall a, b \in F: a \cdot b = 0 \implies a = 0 \lor b = 0
 $$
-In order to prove this, one may prove the following:
 
+In order to prove this, one may prove the following:
 
 $$
 \label{eqn:product_not_zero}
 \forall a, b \in F \land a,b \neq 0 \implies a \cdot b \neq 0
 $$
+
 This can be proved using proof by contradiction, assume that $\exists a,b \in F \land a,b \neq 0 \land a \cdot b = 0$.
 Then:
-
 
 $$
 \begin{split}
@@ -91,6 +87,7 @@ $$
 	& \Rightarrow a = 0
 \end{split}
 $$
+
 Which is a contradiction to one's assumption that $a \neq 0$.<br/>
 Hence, $\eqref{eqn:product_not_zero}$ is true.<br/>
 Therefore, By $\eqref{eqn:product_not_zero}$, if $a, b \in F$ and $a \cdot b = 0$ then either $a = 0$ or $b = 0$.
@@ -128,12 +125,10 @@ Which implies: $a + \left(a \cdot \left(-1\right)\right) = 0$.
 One may then observe that $a + \left(-a\right) = 0$
 and hence, By the singularity of the additive inverse element of $a$:
 
-
 $$
 \label{eqn:general_additive_inverse}
 -a = \left(-1\right) \cdot a
 $$
-
 
 ### 0 Has No Multiplicative Inverse
 
@@ -144,7 +139,6 @@ This can be proved using proof by contradiction, the statement $\exists \frac{1}
 Let $a, b \in F$.<br/>
 Adding the additive inverses of $a$ and $b$ will result in:
 
-
 $$
 \begin{split}
 	\left(-a\right) + \left(-b\right) &= \left[\left(-1\right) \cdot a\right] + \left[\left(-1\right) \cdot b\right] \\
@@ -153,7 +147,6 @@ $$
 \end{split}
 $$
 
-
 In order to find the product of the additive inverses of $a$ and $b$, one may first compute the product of $-1$ with itself.
 
 One may observe that: $1 + \left(-1\right) = 0$.
@@ -161,7 +154,6 @@ And thus, by $\eqref{eqn:general_additive_inverse}$: $\left[\left(-1\right) \cdo
 Hence, both $1$ and $\left(-1\right) \cdot \left(-1\right)$ are additive inverses of $-1$, and therefore, by the singularity of additive inverses: $\left(-1\right) \cdot \left(-1\right) = 1$.
 
 Hence:
-
 
 $$
 \begin{split}
@@ -173,7 +165,6 @@ $$
 $$
 
 Furthermore:
-
 
 $$
 \begin{split}
@@ -187,16 +178,15 @@ $$
 Let $a, b \in F \setminus \{0\}$.<br/>
 Because $\left(F \setminus \{0\}, \cdot\right)$ is a group:
 
-
 $$
 \begin{split}
 	\frac{1}{a \cdot b} &= \frac{1}{b} \cdot \frac{1}{a}
 \end{split}
 $$
+
 Which is the product of the multiplicative inverses of $a$ and $b$.
 
 Hence, adding the multiplicative inverses of $a$ and $b$ will result in:
-
 
 $$
 \begin{split}
@@ -206,7 +196,6 @@ $$
 	&= \left(b + a\right) \cdot \frac{1}{a \cdot b}
 \end{split}
 $$
-
 
 ## Ordered Field
 A field $\left(F, +, \cdot\right)$ equipped with a strict total order $<$ on $F$ such that, $\forall a,b,c \in F$:

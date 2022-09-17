@@ -8,7 +8,6 @@ A set $G$ and a binary operation $\ast$ on $G$ form an Algebraic Structure calle
 If $G$ and $\ast$ form a group, one may write:
 $\left(G, \ast\right)$ is a group.
 
-
 $$
 \begin{split}
 	& \left(G, \ast\right) \text{ is a group } \iff \\
@@ -18,6 +17,7 @@ $$
 	& \forall a \in G: \exists a^{-1} \in G: a \ast a^{-1} = a^{-1} \ast a = e
 \end{split}
 $$
+
 The group definition does not require that $\ast$ be commutative, but if it is, then $\left(G, \ast\right)$ is called an abelian group.
 
 ## Properties
@@ -34,12 +34,9 @@ Therefore, $e = q$, a contradiction to one's assumption that $e \neq q$.
 Therefore, in any group $\left(G, \ast \right)$ there is only one identity element,
 which can be called <b>The</b> identity element. $\blacksquare$
 
-
 $$
 \exists! \; e \in G: \forall a \in G: a \ast e = e \ast a = a
 $$
-
-
 
 ### The Inverse Element Of An Element
 For every element $a \in G$ there exists exactly one inverse element $a^{-1} \in G$.
@@ -56,11 +53,9 @@ And thus: $a^{-1}_1 = a^{-1}_2$.
 Which is a contradiction to one's assumption that $a^{-1}_1 \neq a^{-1}_2$ and therefore, in any group $\left(G, \ast\right)$,
 for every element $a \in G$ there exists exactly one inverse element. $\blacksquare$
 
-
 $$
 \forall a \in G: \exists! a^{-1} \in G: a \ast a^{-1} = a^{-1} \ast a = e
 $$
-
 
 As a consequence, if two elements $a, b \in G$ satisfy $a \ast b = e$, then $a^{-1} = b$ and $b^{-1} = a$
 
@@ -98,16 +93,17 @@ Let $a,b,c \in G$ such that $a \ast b = a \ast c$. Then, by the definition of a 
 is the inverse element of $a$. Hence, $a^{-1} \ast \left(a \ast b\right) = a^{-1} \ast \left(a \ast c\right)$.
 Hence, because $\ast$ is associative: $\left(a^{-1} \ast a \right) \ast b = \left(a^{-1} \ast a \right) \ast c$,
 which implies: $e \ast b = e \ast c$, and because $e$ is the identity element: $b = c$. $\blacksquare$
+
 $$
 \forall a,b,c \in G: a \ast b = a \ast c \implies b = c
 $$
-
 
 #### Proof Of Right-Cancellation
 Let $a,b,c \in G$ such that $b \ast a = c \ast a$. Then, by the definition of a group, there exists an element $a^{-1}$ which
 is the inverse element of $a$. Hence, $\left(a \ast b\right) \ast a^{-1} = \left(a \ast c\right) \ast a^{-1}$.
 Hence, because $\ast$ is associative: $b \ast \left(a \ast a^{-1} \right) = c \ast \left(a \ast a^{-1} \right)$,
 which implies: $b \ast e = c \ast e$, and because $e$ is the identity element: $b = c$. $\blacksquare$
+
 $$
 \forall a,b,c \in G: b \ast a = c \ast a \implies b = c
 $$
@@ -122,12 +118,14 @@ Hence, by the singularity of inverse elements in a group: $\left(a^{-1}\right)^{
 ## Powers And Roots Of Group Elements
 Let $\left(G, \ast\right)$ be a group.
 Then:
+
 $$
 \begin{split}
 	\forall a \in G: \; & a^1 = a \\
 	& \forall n \in \mathbb{N}: a^{n+1} = a^{n} \ast a
 \end{split}
 $$
+
 If $a \in G$ and $\exists x \in G, n \in \mathbb{N}: x^n = a$
 then $x$ is called an $n$th root of $a$.
 
@@ -165,7 +163,6 @@ and thus, it is a permutation of $X$ which implies that $\sigma_1 \circ \sigma_2
 
 Let $\sigma_1, \sigma_2, \sigma_3 \in S_{\small X}$. Then:
 
-
 $$
 \begin{split}
 	\forall x \in X: \left[ \sigma_1 \circ \left( \sigma_2 \circ \sigma_3 \right) \right]\left(x\right) &= \sigma_1\left( \left[\sigma_2 \circ \sigma_3\right]\left(x\right) \right) \\
@@ -174,12 +171,12 @@ $$
 	&= \left[ \left(\sigma_1 \circ \sigma_2 \right) \circ \sigma_3 \right] \left(x\right)
 \end{split}
 $$
+
 Hence: $\forall \sigma_1, \sigma_2, \sigma_3 \in S_{\small X}: \sigma_1 \circ \left( \sigma_2 \circ \sigma_3 \right) = \left(\sigma_1 \circ \sigma_2 \right) \circ \sigma_3$
 which implies that $\circ$ is associative under $S_{\small X}$.
 
 The identity function of $X$, $\mathrm{id}_X: X \rightarrow X$, is a bijection.
 Hence: $\mathrm{id}_X \in S_{\small X}$. In addition:
-
 
 $$
 \begin{split}
@@ -189,6 +186,7 @@ $$
 	&= \left[ \mathrm{id}_X \circ \sigma \right] \left( x \right)
 \end{split}
 $$
+
 Therefore: $\forall \sigma \in S_{\small X}: \sigma \circ \mathrm{id}_X = \mathrm{id}_X \circ \sigma = \sigma$
 which implies that $\mathrm{id}_X$ is an identity element of $\circ$.
 
@@ -201,10 +199,10 @@ To conclude: $\left( S_{\small X}, \circ \right)$ is a group and is called the S
 Let $\left(G_1, \ast\right)$ and $\left(G_2, \cdot \right)$ be groups.
 If there exists a bijective function $f: G_1 \rightarrow G_2$ such that the following holds:
 
-
 $$
 \forall x,y \in G_1: f\left(x \ast y\right) = f\left(x\right) \cdot f\left(y\right)
 $$
+
 Then $f$ is called an isomorphism from $G_1$ to $G_2$ and $G_1$ is said to be isomorphic to $G_2$.
 One may then write $G_1 \cong G_2$.
 
@@ -214,18 +212,17 @@ Let $\left(G, \ast\right)$ be a group. Then $G$ is isomorphic to a subgroup of i
 Let $\left(G, \ast\right)$ be a group with an identity element $e \in G$.
 In order to prove this theorem, one may define the following:
 
-
 $$
 \begin{split}
 	\forall a \in G: \; & \left[ \; \pi_a: G \rightarrow G \; \right] \\
 	& \forall x \in G: \pi_a \left(x\right) = a \ast x \in G
 \end{split}
 $$
+
 Let $a \in G$.
 
 One may let $y_0 \in G$ and $x_0 = a^{-1} \ast y_0 \in G$.
 Then:
-
 
 $$
 \begin{split}
@@ -241,13 +238,13 @@ One may then let $x_1, x_2 \in G$ such that $x_1 \neq x_2$
 and assume that $\pi_a\left(x_1\right) = \pi_a\left(x_2\right)$.
 Then:
 
-
 $$
 \begin{split}
 	a \ast x_1 & = a \ast x_2 \\
 	\Rightarrow x_1 & = x_2
 \end{split}
 $$
+
 This is a contradiction and thus, $\pi_a$ is injective.
 
 
@@ -260,7 +257,6 @@ One may observe that $G^{\ast} \subseteq S_{\small G}$.
 
 Let $a,b \in G$. Then:
 
-
 $$
 \begin{split}
 	\forall x \in G: \left[ \pi_a \circ \pi_b \right]\left(x\right) &= \pi_a\left(\pi_b\left(x\right)\right) \\
@@ -269,6 +265,7 @@ $$
 	&= \pi_{a \ast b} \left( x \right)
 \end{split}
 $$
+
 This implies that $\forall a,b \in G: \pi_a \circ \pi_b = \pi_{a \ast b}$. Thus, because $a \ast b \in G$ then $\pi_{a \ast b} \in G^{\ast}$. Therefore: $\forall \pi_a,\pi_b \in G^{\ast}: \pi_a \circ \pi_b \in G^{\ast}$.
 
 One may observe that $\forall a \in G: \pi_a \circ \pi_{a^{-1}} = \pi_{a \ast a^{-1}} = \pi_e$ and thus, because $\forall x \in G: \pi_e\left(x\right) = e \ast x = x$ then $\pi_e = \mathrm{id}_G$ which implies that $\forall \pi_a \in G^{\ast}: \left( \pi_{a} \right)^{-1} \in G^{\ast}$.
@@ -284,7 +281,6 @@ and thus, $f$ is surjective.
 Let $a,b \in G$ such that $a \neq b$ and assume that $f\left(a\right) = f\left(b\right)$.
 Then $\pi_a = \pi_b$ which is equivalent to:
 
-
 $$
 \begin{split}
 	\forall x \in G: & \pi_a\left(x\right) = \pi_b\left(x\right) \\
@@ -292,12 +288,12 @@ $$
 	\Rightarrow  \; & a = b
 \end{split}
 $$
+
 This is a contradiction and thus $f\left(a\right) \neq f\left(b\right)$.
 
 Thus, because $f$ is surjective and injective, it's bijective.
 
 One may then complete the proof by observing the following:
-
 
 $$
 \begin{split}
@@ -306,7 +302,6 @@ $$
 	&= f\left(a\right) \circ f\left(b\right)
 \end{split}
 $$
-
 
 Hence, $f$ is an isomorphism from $G$ to $G^{\ast}$ and thus, $G$ is isomorphic to $G^{\ast}$. $\blacksquare$
 
@@ -320,13 +315,13 @@ Let $\left(G_1, \ast\right)$, $\left(G_2, \cdot \right)$, and $\left(G_3,\Delta\
 #### Reflexivity
 In order to prove that every group $\left(G, \ast\right)$ is isomorphic to itself, one may consider the identity function $\mathrm{id}_G$. This function is bijective and the following holds:
 
-
 $$
 \begin{split}
 	\forall x,y \in G: \mathrm{id}_G\left(x \ast y\right) &= x \ast y \\
 	&= \mathrm{id}_G\left(x\right) \ast \mathrm{id}_G\left(y\right)
 \end{split}
 $$
+
 And thus: $G \cong G$. $\blacksquare$
 
 #### Symmetricity
@@ -345,7 +340,6 @@ and $f_{2 \rightarrow 3}$ are bijective then $f_{1 \rightarrow 3}$ is bijective.
 
 One may then observe that:
 
-
 $$
 \begin{split}
 	\forall x,y \in G_1: f_{1 \rightarrow 3} \left(x \ast y\right) &= f_{2 \rightarrow 3} \left( f_{1 \rightarrow 2} \left( x \ast y \right) \right) \\
@@ -354,6 +348,7 @@ $$
 	&= f_{1 \rightarrow 3} \left(x\right) \; \Delta \; f_{1 \rightarrow 3} \left(y\right)
 \end{split}
 $$
+
 Hence, $f_{1 \rightarrow 3}$ is an isomorphism from $G_1$ to $G_3$ and thus,
 $G_1$ is isomorphic to $G_3$. $\blacksquare$
 
@@ -368,13 +363,13 @@ In addition, let $f: G_1 \rightarrow G_2$ be an isomorphism. Then:
 
 In order to prove this, one may first observe the following:
 
-
 $$
 \begin{split}
 	\forall a \in G_1: & f\left(a \ast e_1\right) = f\left(a\right) \cdot f\left(e_1\right) \; \land \\
 	& f\left(a \ast e_1\right) = f\left(a\right)
 \end{split}
 $$
+
 Hence: $\forall a \in G_1: f\left(a\right) \cdot f\left(e_1\right) = f\left(a\right) \cdot e_2$
 and thus: $f\left(e_1\right) = e_2$.
 
