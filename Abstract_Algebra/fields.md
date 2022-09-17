@@ -12,15 +12,15 @@ If $F$, $+$, and $\cdot$ form a Field, one may write:
 $\left(F, +, \cdot\right)$ is a Field.
 $$
 \begin{split}
-	&\left(F, +, \cdot\right) \text{ is a Field } \iff \\[1pt]
-	&\forall a,b \in F: a + b \in F \land a \cdot b \in F \land \\[1pt]
-	&\forall a,b,c \in F: a + \left(b + c\right) = \left(a + b\right) + c \land \\[1pt]
-	&\forall a,b,c \in F: a \cdot \left(b \cdot c\right) = \left(a \cdot b\right) \cdot c \land \\[1pt]
-	&\forall a,b \in F: a + b = b + a \land a \cdot b = b \cdot a \land \\[1pt]
-	&\exists 0 \in F: \forall a \in F: a + 0 = 0 + a = a \land \\[1pt]
-	&\exists 1 \in F: 1 \neq 0 \land \forall a \in F: a \cdot 1 = 1 \cdot a = a \land \\[1pt]
-	&\forall a \in F: \exists \left(-a\right) \in F: a + \left(-a\right) = \left(-a\right) + a = 0 \land \\[1pt]
-	&\forall a \in F \setminus \{0\}: \exists \frac{1}{a} \in F: a \cdot \frac{1}{a} = \frac{1}{a} \cdot a = 1 \land \\[1pt]
+	&\left(F, +, \cdot\right) \text{ is a Field } \iff \\
+	&\forall a,b \in F: a + b \in F \land a \cdot b \in F \land \\
+	&\forall a,b,c \in F: a + \left(b + c\right) = \left(a + b\right) + c \land \\
+	&\forall a,b,c \in F: a \cdot \left(b \cdot c\right) = \left(a \cdot b\right) \cdot c \land \\
+	&\forall a,b \in F: a + b = b + a \land a \cdot b = b \cdot a \land \\
+	&\exists 0 \in F: \forall a \in F: a + 0 = 0 + a = a \land \\
+	&\exists 1 \in F: 1 \neq 0 \land \forall a \in F: a \cdot 1 = 1 \cdot a = a \land \\
+	&\forall a \in F: \exists \left(-a\right) \in F: a + \left(-a\right) = \left(-a\right) + a = 0 \land \\
+	&\forall a \in F \setminus \{0\}: \exists \frac{1}{a} \in F: a \cdot \frac{1}{a} = \frac{1}{a} \cdot a = 1 \land \\
 	&\forall a,b,c \in F: a \cdot \left(b + c\right) = \left(a \cdot b\right) + \left(a \cdot c\right)
 \end{split}
 $$
@@ -179,9 +179,9 @@ Which is the product of the multiplicative inverses of $a$ and $b$.
 Hence, adding the multiplicative inverses of $a$ and $b$ will result in:
 $$
 \begin{split}
-	\frac{1}{a} + \frac{1}{b} &= \left(1 \cdot \frac{1}{a}\right) + \left(1 \cdot \frac{1}{b}\right) \\[2pt]
-	&= \left(b \cdot \frac{1}{b} \cdot \frac{1}{a}\right) + \left(a \cdot \frac{1}{a} \cdot \frac{1}{b}\right) \\[2pt]
-	&= \left(b \cdot \frac{1}{a \cdot b}\right) + \left(a \cdot \frac{1}{a \cdot b}\right) \\[2pt]
+	\frac{1}{a} + \frac{1}{b} &= \left(1 \cdot \frac{1}{a}\right) + \left(1 \cdot \frac{1}{b}\right) \\
+	&= \left(b \cdot \frac{1}{b} \cdot \frac{1}{a}\right) + \left(a \cdot \frac{1}{a} \cdot \frac{1}{b}\right) \\
+	&= \left(b \cdot \frac{1}{a \cdot b}\right) + \left(a \cdot \frac{1}{a \cdot b}\right) \\
 	&= \left(b + a\right) \cdot \frac{1}{a \cdot b}
 \end{split}
 $$
