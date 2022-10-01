@@ -1,0 +1,2 @@
+* A statement is any declarative sentence which is either true or false. A statement which depends on a variable is a statement whose truthness or falseness depends on the value of a variable.
+* An axiom is a statement that is taken to be true without proof.
