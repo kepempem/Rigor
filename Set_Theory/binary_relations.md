@@ -277,7 +277,7 @@ $$
 In order to prove this, one may let $X$ be a set.
 
 
-Firstly, one may assume that $\exists \leq \left( \mathrm{PO_{ns}}\left(\leq, X\right) \right)$ and let $< \; = \left\\{ p \in \; \leq \; : \; \exists x,y \in X \left( x \neq y \land x \leq y \land p = \langle x,y \rangle \right) \right\\}$. One may then observe that $\forall x \in X: \lnot\left( x < x \right)$. In addition, let $x$,$y$, and $z$ be sets such that $x,y,z \in X$ and $x < y \land y < z$. Hence: $x \neq y \land y \neq z$.
+Firstly, one may assume that $\exists \leq \left( \mathrm{PO_{ns}}\left(\leq, X\right) \right)$ and let $< \; = \left\\{ p \in \; \leq \; : \; \exists x,y \in X \left( x \neq y \land x \leq y \land p = \langle x,y \rangle \right) \right\\}$. One may then observe that $\forall x \in X: \lnot\left( x < x \right)$. In addition, let $x$, $y$, and $z$ be sets such that $x,y,z \in X$ and $x < y \land y < z$. Hence: $x \neq y \land y \neq z$.
 
 Assume that $x = z$, then $x \leq y \land y \leq x$ and thus, by definition of non-strict partial orders: $x = y$, a contradiction. Thus: $x \neq z$. In addition, by transitivity and definition of $<$:
 
@@ -473,7 +473,7 @@ Then, by the trichotomy of $<$: $x = y$, which implies that $<$ is antisymmetric
 
 Furthermore, let $x,y,z \in X$ and assume that $x \leq y \land y \leq z$.
 If $x = y \lor y = z$ then $x \leq z$.
-Otherwise ($x \neq y \land y \neq z$), one may observe that $x < y \land y < z$
+Otherwise ( $x \neq y \land y \neq z$ ), one may observe that $x < y \land y < z$
 which implies that $x < z$ and thus: $x \leq y$.
 
 One may then let $x,y \in X$ and observe that, by trichotomy of $<$: $x < y \lor y < x \lor x = y$
@@ -515,7 +515,7 @@ $$
 ### Well Order
 Let $\langle X, R \rangle$ be a totally ordered set.
 Then $\langle X, R \rangle$ is called a well-ordered set and $R$ is said to well-order $X$ if and only if the following holds
-(one may denote the fact that $R$ well-orders $X$ by $\mathfrak{W}\left(R, X\right)$):
+(one may denote the fact that $R$ well-orders $X$ by $\mathfrak{W}\left(R, X\right)$ ):
 
 $$
 \begin{split}
@@ -555,7 +555,7 @@ $$
 	\forall a \forall b \left( a \, \mathcal{Q} \, b \iff a \in Y \land b \in Y \land a \, R \, b \right)
 $$
 
-Hence, because $\mathrm{TO}\left(R, X\right)$ then $\mathcal{Q}$ is transitive and homogeneous ($\mathcal{Q} \subseteq Y \times Y$).
+Hence, because $\mathrm{TO}\left(R, X\right)$ then $\mathcal{Q}$ is transitive and homogeneous ( $\mathcal{Q} \subseteq Y \times Y$ ).
 
 If $\mathrm{TO_{ns}}\left(R, X\right)$ then $\mathcal{Q}$ is antisymmetric
 and $\forall a,b \in Y \subseteq X : a \, R \, b \lor b \, R \, a \Longrightarrow a \, \mathcal{Q} \, b \lor b \, \mathcal{Q} \, a$

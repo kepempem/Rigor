@@ -219,7 +219,7 @@ $$
 $$
 
 
-That is, if $\phi$ defines a unique $x$-to-$y$ correspondence (a function) then given a set $X$, all $y$ that $\phi$-correspond to some $x$ in $X$ form a new set.
+That is, if $\phi$ defines a unique $x$-to- $y$ correspondence (a function) then given a set $X$, all $y$ that $\phi$-correspond to some $x$ in $X$ form a new set.
 
 ### Axiom Of Infinity
 The axiom of infinity states the following:

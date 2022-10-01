@@ -48,7 +48,7 @@ and prove the claim using proof by contradiction.
 One may observe the existence of the set:
 
 $$
-B = \Big{\{} x \in A \; \Big{\vert} \; x \not\in f\left(x\right) \Big{\}}
+B = \Big{\\{} x \in A \Big{\vert} x \not\in f\left(x\right) \Big{\\}}
 $$
 
 Clearly, $B \subseteq A$, therefore: $B \in \mathcal{P}\left(A\right)$. Hence, If $f$ is surjective then $\exists \xi \in A: f\left(\xi\right) = B$. One may then notice that either $\xi \in B$ or $\xi \notin B$.
