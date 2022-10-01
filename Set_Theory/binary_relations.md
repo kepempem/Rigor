@@ -3,10 +3,10 @@ if and only if $R \subseteq X \times Y$.
 
 If $R$ is a binary relation on $X$ and $Y$ and $\langle x, y \rangle \in R$
 then $x$ is said to be $R$-related to $y$, in which case, one may write
-$x \; R \; y$. That is:
+$x  R  y$. That is:
 
 $$
-x \; R \; y \iff \langle x, y \rangle \in R \iff x \text{ is } R \text{-related to } y
+x  R  y \iff \langle x, y \rangle \in R \iff x \text{ is } R \text{-related to } y
 $$
 
 Let $R \subseteq X \times Y$ be a binary relation on $X$ and $Y$.
@@ -18,37 +18,37 @@ Let $R \subseteq X \times Y$ be a binary relation on $X$ and $Y$.
 ### Coreflexive Relation
 
 $$
-	R \text{ is coreflexive } \iff \forall x \in X: \forall y \in Y: x \; R \; y \Longrightarrow x = y
+	R \text{ is coreflexive } \iff \forall x \in X: \forall y \in Y: x  R  y \Longrightarrow x = y
 $$
 
 ### Quasi-Reflexive Relation
 
 $$
-	R \text{ is quasi-reflexive } \iff \forall x \in X: \forall y \in Y: x \; R \; y \Longrightarrow x \; R \; x \; \land y \; R \; y
+	R \text{ is quasi-reflexive } \iff \forall x \in X: \forall y \in Y: x  R  y \Longrightarrow x  R  x  \land y  R  y
 $$
 
 ### Symmetric Relation
 
 $$
-	R \text{ is symmetric } \iff \forall x \in X: \forall y \in Y: x \; R \; y \Longrightarrow y \; R \; x
+	R \text{ is symmetric } \iff \forall x \in X: \forall y \in Y: x  R  y \Longrightarrow y  R  x
 $$
 
 ### Antisymmetric Relation
 
 $$
-	R \text{ is antisymmetric } \iff \forall x \in X: \forall y \in Y: x \; R \; y \; \land \; y \; R \; x \Longrightarrow x = y
+	R \text{ is antisymmetric } \iff \forall x \in X: \forall y \in Y: x  R  y  \land  y  R  x \Longrightarrow x = y
 $$
 
 ### Asymmetric Relation
 
 $$
-	R \text{ is asymmetric } \iff \forall x \in X: \forall y \in Y: x \; R \; y \Longrightarrow \neg\left(y \; R \; x\right)
+	R \text{ is asymmetric } \iff \forall x \in X: \forall y \in Y: x  R  y \Longrightarrow \neg\left(y  R  x\right)
 $$
 
 ### Serial Relation
 
 $$
-	R \text{ is serial } \iff \forall x \in X : \exists y \in Y: x \; R \; y
+	R \text{ is serial } \iff \forall x \in X : \exists y \in Y: x  R  y
 $$
 
 ### Homogeneous Relations
@@ -57,26 +57,26 @@ Let $R \subseteq X \times X$ be a homogeneous binary relation on $X$.
 #### Reflexive Relation
 
 $$
-	R \text{ is reflexive } \iff \forall x \in X : x \; R \; x
+	R \text{ is reflexive } \iff \forall x \in X : x  R  x
 $$
 
 #### Irreflexive Relation
 
 $$
-	R \text{ is irreflexive } \iff \not\exists x \in X : x \; R \; x
+	R \text{ is irreflexive } \iff \not\exists x \in X : x  R  x
 $$
 
 #### Transitive Relation
 
 $$
-	R \text{ is transitive } \iff \forall x, y, z \in X : x \; R \; y \; \land \; y \; R \; z \Longrightarrow x \; R \; z
+	R \text{ is transitive } \iff \forall x, y, z \in X : x  R  y  \land  y  R  z \Longrightarrow x  R  z
 $$
 
 #### Complete Relation
 Also known as a Connex relation.
 
 $$
-	R \text{ is Complete } \iff \forall x, y \in X: x \; R \; y \; \lor \; y \; R \; x
+	R \text{ is Complete } \iff \forall x, y \in X: x  R  y  \lor  y  R  x
 $$
 
 #### Trichotomous Relation
@@ -84,22 +84,22 @@ $$
 $$
 \begin{split}
 	& R \text{ is trichotomous } \iff \forall x,y \in X: ( \\
-	& \left[x \; R \; y \; \land \; \lnot \left(y \; R \; x\right) \; \land \; \lnot \left(x=y\right)\right] \; \lor \\
-	& \left[\lnot \left(x \; R \; y\right) \; \land \; y \; R \; x \; \land \; \lnot \left(x=y\right)\right] \; \lor \\
-	& \left[\lnot \left(x \; R \; y\right) \; \land \; \lnot \left(y \; R \; x\right) \; \land \; x=y\right] )
+	& \left[x  R  y  \land  \lnot \left(y  R  x\right)  \land  \lnot \left(x=y\right)\right]  \lor \\
+	& \left[\lnot \left(x  R  y\right)  \land  y  R  x  \land  \lnot \left(x=y\right)\right]  \lor \\
+	& \left[\lnot \left(x  R  y\right)  \land  \lnot \left(y  R  x\right)  \land  x=y\right] )
 \end{split}
 $$
 
 #### Right Euclidean Relation
 
 $$
-	R \text{ is right euclidean } \iff \forall x, y, z \in X: x \; R \; y \; \land x \; R \; z \; \Longrightarrow y \; R \; z
+	R \text{ is right euclidean } \iff \forall x, y, z \in X: x  R  y  \land x  R  z  \Longrightarrow y  R  z
 $$
 
 #### Left Euclidean Relation
 
 $$
-	R \text{ is left euclidean } \iff \forall x, y, z \in X: y \; R \; x \; \land z \; R \; x \; \Longrightarrow y \; R \; z
+	R \text{ is left euclidean } \iff \forall x, y, z \in X: y  R  x  \land z  R  x  \Longrightarrow y  R  z
 $$
 
 ## Equivalence Relations
@@ -115,7 +115,7 @@ $$
 		& \sim \, \subseteq X \times X \land \\
 		& \left( \forall x \in X : x \sim x \right) \land \\
 		& \left( \forall x, y \in X: x \sim y \Longrightarrow y \sim x \right) \land \\
-		& \left( \forall x, y, z \in X : x \; R \; y \; \land \; y \; R \; z \Longrightarrow x \; R \; z \right)
+		& \left( \forall x, y, z \in X : x  R  y  \land  y  R  z \Longrightarrow x  R  z \right)
 	)
 \end{split}
 $$
@@ -223,7 +223,7 @@ $$
 		& \mathrm{PO_{ns}}\left(\leq, X\right) \iff \\
 		& \leq \subseteq X \times X \land \forall x,y,z \in X ( \\
 		& \left( x \leq x \right) \land \\
-		& \left( x \leq y \; \land \; y \leq x \Longrightarrow x = y \right) \land \\
+		& \left( x \leq y  \land  y \leq x \Longrightarrow x = y \right) \land \\
 		& \left( x \leq y \land y \leq z \Longrightarrow x \leq z \right) )
 	)
 \end{split}
@@ -277,7 +277,7 @@ $$
 In order to prove this, one may let $X$ be a set.
 
 
-Firstly, one may assume that $\exists \leq \left( \mathrm{PO_{ns}}\left(\leq, X\right) \right)$ and let $< \; = \left\\{ p \in \; \leq \; : \; \exists x,y \in X \left( x \neq y \land x \leq y \land p = \langle x,y \rangle \right) \right\\}$. One may then observe that $\forall x \in X: \lnot\left( x < x \right)$. In addition, let $x$, $y$, and $z$ be sets such that $x,y,z \in X$ and $x < y \land y < z$. Hence: $x \neq y \land y \neq z$.
+Firstly, one may assume that $\exists \leq \left( \mathrm{PO_{ns}}\left(\leq, X\right) \right)$ and let $<  = \left\\{ p \in  \leq  :  \exists x,y \in X \left( x \neq y \land x \leq y \land p = \langle x,y \rangle \right) \right\\}$. One may then observe that $\forall x \in X: \lnot\left( x < x \right)$. In addition, let $x$, $y$, and $z$ be sets such that $x,y,z \in X$ and $x < y \land y < z$. Hence: $x \neq y \land y \neq z$.
 
 Assume that $x = z$, then $x \leq y \land y \leq x$ and thus, by definition of non-strict partial orders: $x = y$, a contradiction. Thus: $x \neq z$. In addition, by transitivity and definition of $<$:
 
@@ -291,7 +291,7 @@ $$
 Hence: $\mathrm{PO_{s}}\left(<, X\right)$.
 
 
-One may then assume that $\exists < \left( \mathrm{PO_s}\left(<, X\right) \right)$ and let $\leq \; = \left\\{ p \in X \times X : \exists x,y \in X \left( \left( x < y \lor x = y \right) \land p = \langle x,y \rangle \right) \right\\}$. Hence: $\forall x \in X: x \leq x$. In addition, let $x$ and $y$ be sets such that $x \leq y \land y \leq x$. Assume that $x \neq y$, then $x < y \land y < x$ which contradicts the asymmetry of strict partial orders. Hence: $\forall x,y \in X: x \leq y \land y \leq x \Rightarrow x = y$. One may then let $x$, $y$ and $z$ be sets such that $x \leq y \land y \leq z$. If $x = y$ or $y = z$ then $x \leq z$. Otherwise, if $x \neq y \land y \neq z$ then: $x < y \land y < z$ and thus: $x < z$ which implies $x \leq z$. Hence: $\mathrm{PO_{ns}}\left(\leq, X\right)$. $\blacksquare$
+One may then assume that $\exists < \left( \mathrm{PO_s}\left(<, X\right) \right)$ and let $\leq  = \left\\{ p \in X \times X : \exists x,y \in X \left( \left( x < y \lor x = y \right) \land p = \langle x,y \rangle \right) \right\\}$. Hence: $\forall x \in X: x \leq x$. In addition, let $x$ and $y$ be sets such that $x \leq y \land y \leq x$. Assume that $x \neq y$, then $x < y \land y < x$ which contradicts the asymmetry of strict partial orders. Hence: $\forall x,y \in X: x \leq y \land y \leq x \Rightarrow x = y$. One may then let $x$, $y$ and $z$ be sets such that $x \leq y \land y \leq z$. If $x = y$ or $y = z$ then $x \leq z$. Otherwise, if $x \neq y \land y \neq z$ then: $x < y \land y < z$ and thus: $x < z$ which implies $x \leq z$. Hence: $\mathrm{PO_{ns}}\left(\leq, X\right)$. $\blacksquare$
 
 
 Therefore, if $R$ is a partial order (non-strict or strict) on $X$,
@@ -303,7 +303,7 @@ $$
 $$
 
 #### Order Isomorphism
-Let $\langle X, R_X \rangle$ and $\langle Y, R_Y \rangle$ be partially ordered sets. Then a function $F$ that satisfies $F\left[X \rightarrow Y\right] \land \forall x,y \in X: x \; R_X \; y \iff F\left(x\right) \; R_Y \; F\left(y\right)$. Then $F$ is called an order isomorphism and one may write $\langle X, R_X \rangle \cong \langle Y, R_Y \rangle$.
+Let $\langle X, R_X \rangle$ and $\langle Y, R_Y \rangle$ be partially ordered sets. Then a function $F$ that satisfies $F\left[X \rightarrow Y\right] \land \forall x,y \in X: x  R_X  y \iff F\left(x\right)  R_Y  F\left(y\right)$. Then $F$ is called an order isomorphism and one may write $\langle X, R_X \rangle \cong \langle Y, R_Y \rangle$.
 
 ### Total Order
 
@@ -318,7 +318,7 @@ $$
 	\forall X \forall \leq (
 		& \mathrm{TO_{ns}}\left(\leq, X\right) \iff \\
 			& \leq \subseteq X \times X \land \forall x,y,z \in X ( \\
-			& \left( x \leq y \; \land \; y \leq x \Longrightarrow x = y \right) \land \\
+			& \left( x \leq y  \land  y \leq x \Longrightarrow x = y \right) \land \\
 			& \left( x \leq y \land y \leq z \Longrightarrow x \leq z \right) \land \\
 			& \left( x \leq y \lor y \leq x \right)
 		)
@@ -494,8 +494,8 @@ $$
 In order to prove this, one may let $X$ be a set.
 
 Firstly, one may assume that $\exists \leq \left( \mathrm{TO_{ns}}\left(\leq, X\right) \right)$
-and let $< \; = \left\\{ p \in \; \leq \; : \exists x,y \in X \left( x \leq y \land x \neq y \land p = \langle x,y \rangle \right) \right\\}$.
-Therefore, since $\forall x,y \in X: x \leq y \iff \langle x,y \rangle \in \; \leq$ then $\forall x,y \in X: x < y \iff x \leq y \land x \neq y$
+and let $<  = \left\\{ p \in  \leq  : \exists x,y \in X \left( x \leq y \land x \neq y \land p = \langle x,y \rangle \right) \right\\}$.
+Therefore, since $\forall x,y \in X: x \leq y \iff \langle x,y \rangle \in  \leq$ then $\forall x,y \in X: x < y \iff x \leq y \land x \neq y$
 and thus: $\mathrm{TO_s}\left(<, X\right)$.
 
 One may then assume that $\exists < \left( \mathrm{TO_s}\left(<, X\right) \right)$.
@@ -532,7 +532,7 @@ One may define the following:
 $$
 	\forall X \forall R \forall a \left(
 		\mathfrak{W}\left(R, X\right) \land a \in X \Longrightarrow
-		\mathrm{Seg}_{X,R} \left(a\right) := \left\\{ x \in X : x \; R \; a \land x \neq a \right\\}
+		\mathrm{Seg}_{X,R} \left(a\right) := \left\\{ x \in X : x  R  a \land x \neq a \right\\}
 	\right)
 $$
 

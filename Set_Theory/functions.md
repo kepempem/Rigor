@@ -30,14 +30,14 @@ $$
 The domain of a function $F$, denoted $\mathrm{Dom}\left(F\right)$ is defined as follows:
 
 $$
-\forall F \left( \mathrm{Func}\left(F\right) \Longrightarrow \mathrm{Dom}\left(F\right) := \left\\{ x \in \bigcup \left( \bigcup F \right) \; \vert \; \exists y \left( \langle x, y \rangle \in F \right) \right\\} \right)
+\forall F \left( \mathrm{Func}\left(F\right) \Longrightarrow \mathrm{Dom}\left(F\right) := \left\\{ x \in \bigcup \left( \bigcup F \right)  \vert  \exists y \left( \langle x, y \rangle \in F \right) \right\\} \right)
 $$
 
 ## Range
 The range of a function $F$, denoted $\mathrm{Range}\left(F\right)$ is defined as follows:
 
 $$
-\forall F \left( \mathrm{Func}\left(F\right) \Longrightarrow \mathrm{Range}\left( F \right) := \left\\{ y \in \bigcup \left( \bigcup F \right) \; \vert \; \exists x \left( \langle x, y \rangle \in F \right) \right\\} \right)
+\forall F \left( \mathrm{Func}\left(F\right) \Longrightarrow \mathrm{Range}\left( F \right) := \left\\{ y \in \bigcup \left( \bigcup F \right)  \vert  \exists x \left( \langle x, y \rangle \in F \right) \right\\} \right)
 $$
 
 ## Restriction
@@ -45,7 +45,7 @@ Given a function $F$ and a set $X$ such that $X \subseteq \mathrm{Dom}\left(F\ri
 the restriction of the function $F$ to $X$, denoted $F\vert_X$, is defined as follows:
 
 $$
-\forall F \forall X \left( \mathrm{Func}\left(F\right) \land X \subseteq \mathrm{Dom}\left(F\right) \Longrightarrow F\vert_X := \left\\{ p \in F \; \vert \; \exists x \exists y \left( x \in X \land p = \langle x, y \rangle \right) \right\\} \right)
+\forall F \forall X \left( \mathrm{Func}\left(F\right) \land X \subseteq \mathrm{Dom}\left(F\right) \Longrightarrow F\vert_X := \left\\{ p \in F  \vert  \exists x \exists y \left( x \in X \land p = \langle x, y \rangle \right) \right\\} \right)
 $$
 
 A restriction of a function $F$ to $X$ is a function such that $\mathrm{Dom}\left(F\vert_X\right) = X$.
@@ -53,7 +53,7 @@ In order to prove this, one may let $F$ be a set such that $\mathrm{Func}\left(F
 such that $X \subseteq \mathrm{Dom}\left(F\right)$. Hence:
 
 $$
-\mathrm{Dom}\left(F\vert_X\right) = \left\\{ x \in \bigcup \left( \bigcup F\vert_X \right) \; \vert \; \exists y \left( \langle x, y \rangle \in F\vert_X \right) \right\\}
+\mathrm{Dom}\left(F\vert_X\right) = \left\\{ x \in \bigcup \left( \bigcup F\vert_X \right)  \vert  \exists y \left( \langle x, y \rangle \in F\vert_X \right) \right\\}
 $$
 
 One may then prove that $\forall x \left( x \in X \iff x \in \mathrm{Dom}\left(F\vert_X\right) \right)$.

@@ -129,9 +129,9 @@ Then:
 
 $$
 \begin{split}
-    \beta \subseteq \alpha \Longrightarrow \; & \gamma \in \alpha \\
-    \Longrightarrow \; & \gamma \subseteq \alpha \\
-    \Longrightarrow \; & \delta \in \alpha
+    \beta \subseteq \alpha \Longrightarrow  & \gamma \in \alpha \\
+    \Longrightarrow  & \gamma \subseteq \alpha \\
+    \Longrightarrow  & \delta \in \alpha
 \end{split}
 $$
 

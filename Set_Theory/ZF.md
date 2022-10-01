@@ -82,12 +82,12 @@ $$
 
 
 #### Set Builder Notation
-By using the axiom schema of specification, given a set $x$ and a formula $\phi\left(u,p\right)$, one may construct a set consisting of all the members of $x$ that satisfy $\phi$ and denote it $\left\\{ u \in x \; : \; \phi\left(u,p\right) \right\\}$.
+By using the axiom schema of specification, given a set $x$ and a formula $\phi\left(u,p\right)$, one may construct a set consisting of all the members of $x$ that satisfy $\phi$ and denote it $\left\\{ u \in x  :  \phi\left(u,p\right) \right\\}$.
 
 That is:
 
 $$
-\forall v\left( v \in \left\\{ u \in x \; : \; \phi\left(u,p\right) \right\\} \iff \left( v \in x \land \phi\left(v,p\right) \right) \right)
+\forall v\left( v \in \left\\{ u \in x  :  \phi\left(u,p\right) \right\\} \iff \left( v \in x \land \phi\left(v,p\right) \right) \right)
 $$
 
 
@@ -353,7 +353,7 @@ The intersection of two sets $x$ and $y$ is defined as follows:
 
 
 $$
-\forall x \forall y \left( x \cap y := \left\\{ u \in x \cup y \; : \; u \in x \land u \in y \right\\} \right)
+\forall x \forall y \left( x \cap y := \left\\{ u \in x \cup y  :  u \in x \land u \in y \right\\} \right)
 $$
 
 
@@ -397,7 +397,7 @@ Given two sets $x$ and $y$, the complement of $y$ in $x$, denoted $x \setminus y
 
 
 $$
-\forall x \forall y \left( x \setminus y := \left\\{ u \in x \; : \; \lnot\left( u \in y \right) \right\\} \right)
+\forall x \forall y \left( x \setminus y := \left\\{ u \in x  :  \lnot\left( u \in y \right) \right\\} \right)
 $$
 
 
@@ -410,7 +410,7 @@ One may then define an ordered pair $\langle x,y \rangle$ as follows:
 
 
 $$
-\forall x \forall y \left( \; \langle x,y \rangle := \left\\{ \left\\{x\right\\}, \left\\{x, y\right\\} \right\\} \; \right)
+\forall x \forall y \left(  \langle x,y \rangle := \left\\{ \left\\{x\right\\}, \left\\{x, y\right\\} \right\\}  \right)
 $$
 
 
@@ -492,7 +492,7 @@ Hence, given two sets $X$ and $Y$, one may use the axiom schema of specification
 
 
 $$
-\forall X \forall Y \left( X \times Y := \left\\{ u \in \mathcal{P}\left( \mathcal{P}\left(X \cup Y \right) \right) \; : \; \exists x \exists y \left( x \in X \land y \in Y \land u = \langle x, y \rangle \right) \right\\} \right)
+\forall X \forall Y \left( X \times Y := \left\\{ u \in \mathcal{P}\left( \mathcal{P}\left(X \cup Y \right) \right)  :  \exists x \exists y \left( x \in X \land y \in Y \land u = \langle x, y \rangle \right) \right\\} \right)
 $$
 
 
