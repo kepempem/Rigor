@@ -85,6 +85,7 @@ $$
 By using the axiom schema of specification, given a set $x$ and a formula $\phi\left(u,p\right)$, one may construct a set consisting of all the members of $x$ that satisfy $\phi$ and denote it $\left\\{ u \in x \; : \; \phi\left(u,p\right) \right\\}$.
 
 That is:
+
 $$
 \forall v\left( v \in \left\\{ u \in x \; : \; \phi\left(u,p\right) \right\\} \iff \left( v \in x \land \phi\left(v,p\right) \right) \right)
 $$
@@ -466,6 +467,7 @@ $$
     &= \langle a, b \rangle
 \end{split}
 $$
+
 And thus, the condition holds. $\blacksquare$
 
 ## Cartesian Products

@@ -1,6 +1,7 @@
 ## In Terms Of Functions
 
 ### Equal Cardinality
+
 $$
 \mathrm{card}\left(A\right) = \mathrm{card}\left(B\right) \iff \exists f: A \rightarrow B, \text{ f is a bijection}
 $$
@@ -10,16 +11,16 @@ $$
 Meaning, the cardinalities of $A$ and $B$ are equal if and only if there is a bijective function from $A$ to $B$. This is a result of the fact that a bijective function $f: A \rightarrow B$ is a one-to-one correspondence between $A$ and $B$.
 
 ### Less Than Or Equal To Cardinality
+
 $$
 \mathrm{card}\left(A\right) \leq \mathrm{card}\left(B\right) \iff \exists f: A \rightarrow B, \text{ f is an injection}
 $$
-
-
 
 Meaning, the cardinality of $A$ is equal to or less than the cardinality of $B$ if and only if there is an injective function from $A$ to $B$. This is a result of the fact that, by the definition of an injective function, for every element $a \in A$ there is no more than one element $b \in B$ such that $f\left(a\right) = b$. There could exist elements
 $b \in B$ such that there exists no $a \in A$ that satisfies $f\left(a\right) = b$ and so, there is a one-to-one correspondence between $A$ and a subset of $B$ but not necessarily all of $B$.
 
 ### Strictly Less Than Cardinality
+
 $$
 \begin{split}
 	& \mathrm{card}\left(A\right) < \mathrm{card}\left(B\right) \iff \\
@@ -28,13 +29,12 @@ $$
 \end{split}
 $$
 
-
-
 Meaning, the cardinality of $A$ is strictly less than the cardinality of $B$ if and only if there is an injective function from $A$ to $B$ but there is no bijective function from $A$ to $B$. This is a result of the fact that, because there is an injective function from $A$ to $B$, then $\mathrm{card}\left(A\right) \leq \mathrm{card}\left(B\right)$ but because there is no bijective function from $A$ to $B$, then $\mathrm{card}\left(A\right) \neq \mathrm{card}\left(B\right)$ and hence: $\mathrm{card}\left(A\right) < \mathrm{card}\left(B\right)$.
 
 ## Cantor's Theorem
 
 Cantor's Theorem states that if $A$ is any set then:
+
 $$
 \mathrm{card}\left(A\right) < \mathrm{card}\left(\mathcal{P}\left(A\right)\right)
 $$
@@ -46,10 +46,10 @@ One may assume that there exists a surjective function $f: A \rightarrow \mathca
 and prove the claim using proof by contradiction.
 
 One may observe the existence of the set:
+
 $$
 B = \Big{\{} x \in A \; \Big{\vert} \; x \not\in f\left(x\right) \Big{\}}
 $$
-
 
 Clearly, $B \subseteq A$, therefore: $B \in \mathcal{P}\left(A\right)$. Hence, If $f$ is surjective then $\exists \xi \in A: f\left(\xi\right) = B$. One may then notice that either $\xi \in B$ or $\xi \notin B$.
 * If $\xi \in B$ then, because $f\left(\xi\right) = B$: $\xi \in f\left(\xi\right)$ which implies, by the construction of $B$: $\xi \not\in B$ which is a contradiction to the assumption that $\xi \in B$.
@@ -59,6 +59,7 @@ Both of these options lead to a contradiction, therefore, $f$ is not surjective.
 Therefore, because there's no surjective function from $A$ to $\mathcal{P}\left(A\right)$, there's no bijective function from $A$ to $\mathcal{P}\left(A\right)$.
 
 One may then find an injective function $f: A \rightarrow \mathcal{P}\left(A\right)$ such as:
+
 $$
 \forall x \in A: f\left(x\right) = \{ x \} \in \mathcal{P}\left(A\right)
 $$
@@ -67,6 +68,7 @@ $$
 This function is injective because $\forall x,y \in A: \{ x \} = \{ y \} \Rightarrow x = y$.
 
 Therefore, because there is an injective function but no bijective function from $A$ to $\mathcal{P}\left(A\right)$:
+
 $$
 \mathrm{card}\left(A\right) < \mathrm{card}\left(\mathcal{P}\left(A\right)\right)
 $$
@@ -79,6 +81,7 @@ A set $A$ is only infinite if there is an injective function
 from $A$ to $A$ that is not surjective. In terms of sets, $A$ is
 only infinite if there is a proper subset of $A$ with the
 same cardinality as $A$.
+
 $$
 \begin{split}
 	& A \text{ is an infinite set } \iff \\
@@ -108,7 +111,6 @@ is bijective, and thus, it has a bijective inverse function $\Omega^{-1}: A \set
 
 One may let $\varphi: A \rightarrow B$:
 
-
 $$
 	\varphi \left(a\right) = {
 		\begin{cases}
@@ -117,7 +119,6 @@ $$
 		\end{cases}
 	}
 $$
-
 
 One may observe that $\varphi\left[S\right] = f\left[S\right]$ and $\varphi\left[A \setminus S\right] = \Omega^{-1}\left[A \setminus S\right] = B \setminus f\left[S\right]$ and hence: $\varphi\left[A\right] = f\left[S\right] \cup \left(B \setminus f\left[S\right]\right)$. Thus, because $f\left[S\right] \subseteq B$ then: $\varphi\left[A\right] = B$ and hence $\varphi$ is surjective.
 

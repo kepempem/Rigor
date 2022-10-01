@@ -9,8 +9,6 @@ $$
 x \; R \; y \iff \langle x, y \rangle \in R \iff x \text{ is } R \text{-related to } y
 $$
 
-
-
 Let $R \subseteq X \times Y$ be a binary relation on $X$ and $Y$.
 If $X = Y$ then $R$ is called a homogeneous relation.
 
@@ -556,6 +554,7 @@ $\mathfrak{W}\left(R, X\right) \land Y \subseteq X$ and let $\mathcal{Q} = R \ca
 $$
 	\forall a \forall b \left( a \, \mathcal{Q} \, b \iff a \in Y \land b \in Y \land a \, R \, b \right)
 $$
+
 Hence, because $\mathrm{TO}\left(R, X\right)$ then $\mathcal{Q}$ is transitive and homogeneous ($\mathcal{Q} \subseteq Y \times Y$).
 
 If $\mathrm{TO_{ns}}\left(R, X\right)$ then $\mathcal{Q}$ is antisymmetric

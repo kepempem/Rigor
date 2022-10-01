@@ -1,4 +1,5 @@
 The axiom of choice, also known as the AC, states the following:
+
 $$
 \forall X \left( \emptyset \not\in X \Longrightarrow \exists F \left( F: X \rightarrow \bigcup X \land \forall Y \left( Y \in X \Longrightarrow F\left( Y \right) \in Y \right) \right) \right)
 $$
@@ -8,27 +9,21 @@ $$
 Let $AC$ denote the axiom of choice.
 In addition, let $AC_\emptyset$ denote the following statement:
 
-
 $$
 \forall X \left( \emptyset \not\in X \land \left( \forall A \forall B \left(A \in X \land B \in X \land A \neq B \Longrightarrow A \cap B = \emptyset \right) \right) \Longrightarrow \exists F \left( F: X \rightarrow \bigcup X \land \forall Y \left( Y \in X \Longrightarrow F\left( Y \right) \in Y \right) \right)  \right)
 $$
 
-
 And let $AC_\mathcal{P}$ denote the following statement:
-
 
 $$
  \forall X \left( X \neq \emptyset \Longrightarrow \exists F \left( F: \mathcal{P}\left(X\right) \setminus \left\\{ \emptyset \right\\} \rightarrow X \land \forall Y \left( Y \in \mathcal{P}\left(X\right) \setminus \left\\{\emptyset\right\\} \Longrightarrow F\left(Y\right) \in Y \right) \right) \right)
 $$
 
-
 Then:
-
 
 $$
 AC \iff AC_\emptyset \iff AC_\mathcal{P}
 $$
-
 
 In order to prove that all three statements are equivalent,
 one may prove that $AC \Longrightarrow AC_\emptyset \Longrightarrow AC_\mathcal{P} \Longrightarrow AC$.
@@ -45,6 +40,7 @@ one may prove that $AC \Longrightarrow AC_\emptyset \Longrightarrow AC_\mathcal{
     $$
     \mathcal{S} = \left\\{ Z \in \mathcal{P}\left( X \times \mathcal{P}\left( X \right) \right) : \exists A \left( A \in \mathcal{P}\left(X\right) \setminus \left\\{ \emptyset \right\\} \land Z = A \times \left\\{ A \right\\} \right) \right\\}
     $$
+    
     One may then let $\alpha$ and $\beta$ be sets such that $\alpha \in \mathcal{S} \land \beta \in \mathcal{S} \land \alpha \neq \beta$. Hence: $\exists A \left( A \in \mathcal{P}\left(X\right) \setminus \left\\{ \emptyset \right\\} \land \alpha = A \times \left\\{ A \right\\} \right) \land \exists B \left( B \in \mathcal{P}\left(X\right) \setminus \left\\{ \emptyset \right\\} \land \beta = B \times \left\\{ B \right\\} \right)$. Thus:
     
     $$

@@ -1,7 +1,6 @@
 ## Transitive Sets
 One may define the following:
 
-
 $$
 \begin{split}
     \forall X (
@@ -12,7 +11,6 @@ $$
 \end{split}
 $$
 
-
 If a set $X$ satisfies $\mathrm{TR}\left( X \right)$ then it is called a transitive set.
 
 ### Properties
@@ -20,7 +18,6 @@ If a set $X$ satisfies $\mathrm{TR}\left( X \right)$ then it is called a transit
 #### TR(X ⋂ Y)
 One may observe that the intersection of transitive sets is also transitive.
 That is:
-
 
 $$
 \begin{split}
@@ -32,11 +29,9 @@ $$
 \end{split}
 $$
 
-
 #### TR(X ⋃ Y)
 The union of transitive sets is transitive.
 That is:
-
 
 $$
 \begin{split}
@@ -47,10 +42,8 @@ $$
 \end{split}
 $$
 
-
 #### Union Of A Set Of Transitive Sets Is Transitive
 The following holds:
-
 
 $$
 \forall X \left(
@@ -58,10 +51,6 @@ $$
         \mathrm{TR}\left( \bigcup X \right)
     \right)
 $$
-
-
-
-
 
 In order to prove this, one may let $X$ be a set such that $\forall x \in X: \mathrm{TR}\left(x\right)$.
 
@@ -72,14 +61,12 @@ Therefore: $x \subseteq \bigcup X$. $\blacksquare$
 #### Intersection Of A Set Of Transitive Sets Is Transitive
 The following holds:
 
-
 $$
 \forall X \left(
         \left( \forall x \in X: \mathrm{TR}\left(x\right) \right) \Longrightarrow
         \mathrm{TR}\left( \bigcap X \right)
     \right)
 $$
-
 
 In order to prove this, one may let $X$ be a set such that $\forall x \in X: \mathrm{TR}\left(x\right)$
 and let $x \in \bigcap X$. Then $\forall y \in S : x \in y$ which implies that $\forall y \in S: x \subseteq y$
@@ -91,14 +78,13 @@ One may then use the definition of intersection and observe the following: $\dis
 
 For convenience, one may define the following notation:
 
-
 $$
 \forall \alpha \left( \in_{\alpha} = \left\\{ p \in \alpha \times \alpha : \exists x,y \in \alpha \left( x \in y \land p = \langle x,y \rangle \right) \right\\} \right)
 $$
 
-
 A set $\alpha$ is called a (Von Neumann) ordinal if and only if $\mathrm{ON}\left(\alpha\right)$
 where $\mathrm{ON}$ is defined by:
+
 $$
 \forall \alpha (
         \mathrm{ON}\left(\alpha\right) \iff \mathrm{TR}\left(\alpha\right) \land
@@ -106,12 +92,10 @@ $$
     )
 $$
 
-
 For convenience, one may denote the fact that $\alpha, \beta, \cdots$ are ordinals by $\mathrm{ON}\left(\alpha,\beta,\cdots\right)$.
 That is: $\mathrm{ON}\left(\alpha,\beta,\cdots\right) \iff \mathrm{ON}\left(\alpha\right) \land \mathrm{ON}\left(\beta\right) \land \cdots$.
 
 In addition, one may define the following notation:
-
 
 $$
 \begin{split}
@@ -128,21 +112,21 @@ $$
     \right)
 $$
 
-
 That is, $\mathrm{ON_C}\left(X\right)$ if and only if $X$ is a set of ordinals.
 
 
 ## TR Lemma
 The following holds:
+
 $$
 \forall \alpha: \mathrm{ON}\left(\alpha\right) \Longrightarrow \mathrm{ON_C}\left(\alpha\right)
 $$
-
 
 In order to prove this, one may let $\alpha$ be an ordinal and let $\beta$ be a set such that $\beta \in \alpha$. Hence, by definition of ordinals: $\beta \subseteq \alpha$. Hence, because $\in_{\alpha}$ well-orders $\alpha$ and $\beta \subseteq \alpha$, then $\in_{\beta}$ well-orders $\beta$. That is: $\mathfrak{W}\left(\in_{\beta}, \beta\right)$.
 
 In addition, one may let $\gamma$ and $\delta$ be sets such that $\delta \in \gamma \in \beta$.
 Then:
+
 $$
 \begin{split}
     \beta \subseteq \alpha \Longrightarrow \; & \gamma \in \alpha \\
@@ -151,21 +135,19 @@ $$
 \end{split}
 $$
 
-
 Therefore: $\mathrm{TR}\left(\beta\right)$ and thus: $\mathrm{ON}\left( \beta \right)$. $\blacksquare$
 
 ## Intersection Lemma
 The following holds:
+
 $$
 \forall \alpha \forall \beta \left( \mathrm{ON}\left(\alpha, \beta\right) \Longrightarrow \mathrm{ON}\left(\alpha \cap \beta\right) \right)
 $$
-
 
 In order to prove this, one may let $\alpha$ and $\beta$ be ordinals. Firstly, one may observe that $\mathrm{TR}\left( \alpha \cap \beta \right)$. In addition, because $\in_\alpha$ well-orders $\alpha$ and $\alpha \cap \beta \subseteq \alpha$ then $\in_{\alpha \, \cap \, \beta}$ well-orders $\alpha \cap \beta$. Thus: $\mathrm{ON}\left(\alpha \cap \beta\right)$. $\blacksquare$
 
 ## Subsets Lemma
 The following holds:
-
 
 $$
 \forall \alpha \forall \beta \left(
@@ -174,7 +156,6 @@ $$
         \right)
     \right)
 $$
-
 
 In order to prove this, one may let $\alpha$ and $\beta$ be ordinals.
 Firstly, one may observe that $\mathrm{TR}\left(\beta\right)$ and thus, if $\alpha \in \beta \lor \alpha = \beta$ then $\alpha \subseteq \beta$.
@@ -193,6 +174,7 @@ Let $\delta \in \alpha \setminus \gamma$, then $\delta \in \alpha \subseteq \bet
 One may then observe that $\gamma \not\in \alpha$ (because $\gamma \in X$) which implies that $\delta \neq \gamma$ (because $\delta \in \alpha$) and if $\gamma \in \delta$ then $\gamma \in \alpha$ (because $\delta \in \alpha \Longrightarrow \delta \subseteq \alpha$), a contradiction. Therefore: $\alpha \setminus \gamma = \emptyset$ which implies that $\alpha = \gamma$ (because $\gamma \subseteq \alpha$) and thus: $\alpha \in \beta$ (because $\gamma \in \beta$). $\blacksquare$
 
 In addition, The following holds:
+
 $$
 \forall \alpha, \beta \left(
         \mathrm{ON}\left(\alpha, \beta\right) \Longrightarrow \left(
@@ -208,6 +190,7 @@ One may then assume that $\alpha \subseteq \beta$, then by the subsets lemma: $\
 
 ## Asymmetry Lemma
 The following holds:
+
 $$
 \forall \alpha, \beta \left(
         \mathrm{ON}\left(\alpha, \beta\right) \Longrightarrow
@@ -269,6 +252,7 @@ This result implies that $\forall X \left( \mathrm{ON_C}\left(X\right) \Longrigh
 
 ## Transitive Set Of Ordinals is an Ordinal
 The following holds:
+
 $$
 \forall \alpha \left( \mathrm{TR}\left(\alpha\right) \land \mathrm{ON_C}\left(\alpha\right) \Longrightarrow \mathrm{ON}\left(\alpha\right) \right)
 $$
@@ -279,6 +263,7 @@ In order to prove this, one may let $\alpha$ be a transitive set of ordinals. Th
 ## Min, Max, inf, sup
 
 In addition:
+
 $$
 \begin{split}
     \forall X \forall \alpha (
@@ -292,7 +277,6 @@ $$
 \end{split}
 $$
 
-
 An ordinal $\alpha$ is called a lower bound of a set $X$ if $\forall x \in X: \alpha \leq x$.
 An ordinal $\alpha$ is called an upper bound of a set $X$ if $\forall x \in X: x \leq \alpha$.
 $\inf X$ is called the infimum of $X$ and is the greatest lower bound of $X$.
@@ -301,12 +285,9 @@ $\sup X$ is called the supremum of $X$ and is the least upper bound of $X$.
 ### Union
 The following holds:
 
-
 $$
 \forall \alpha, \beta \left( \mathrm{ON}\left(\alpha,\beta\right) \Longrightarrow \mathrm{ON}\left( \alpha \cup \beta \right) \land \alpha \cup \beta = \max \left\\{ \alpha, \beta \right\\} \right)
 $$
-
-
 
 In order to prove this, one may let $\alpha$ and $\beta$ be ordinals.
 
@@ -322,18 +303,16 @@ If $\beta < \alpha$ then $\beta \in \alpha$ which implies that $\beta \subseteq 
 
 In addition, the following holds:
 
-
 $$
 \forall X \left( \mathrm{ON_C}\left(X\right) \land X \neq \emptyset \Longrightarrow \sup X = \bigcup X \right)
 $$
-
-
 
 In order to prove this, one may let $X$ be a set such that $\mathrm{ON_C}\left(X\right) \land X \neq \emptyset$.
 Therefore, because $X$ is a nonempty set of ordinals, it's a set of transitive sets.
 This implies that $\displaystyle \mathrm{TR}\left(\bigcup X\right)$.
 
 In addition:
+
 $$
 \begin{split}
     \forall x \in \bigcup X: & \exists y \in X: x \in y \\
@@ -342,17 +321,14 @@ $$
 \end{split}
 $$
 
-
 Hence: $\displaystyle \mathrm{ON_C}\left(\bigcup X\right)$. Therefore, because $\displaystyle \bigcup X$ is a transitive set of ordinals,
 then $\displaystyle \mathrm{ON}\left(\bigcup X\right)$.
 
 In addition, one may observe the following:
 
-
 $$
 \forall y \in X: y \subseteq \bigcup X \Longrightarrow y \leq \bigcup X
 $$
-
 
 Hence, $\displaystyle \bigcup X$ is an upper bound of $X$.
 Assume that $U$ is another upper bound of $X$ and let $\displaystyle x \in \bigcup X$.
@@ -361,10 +337,10 @@ $x \in y \land y \leq U$ which is equivalent to $x \in y \land y \subseteq U$ an
 
 ### Intersection
 The following holds:
+
 $$
 \forall \alpha, \beta \left( \mathrm{ON}\left(\alpha,\beta\right) \Longrightarrow \alpha \cap \beta = \min \left\\{ \alpha, \beta \right\\} \right)
 $$
-
 
 In order to prove this, one may let $\alpha$ and $\beta$ be ordinals. By the intersection lemma: $\mathrm{ON}\left(\alpha \cap \beta\right)$. In addition, by the well-orderedness of the ordinals: $\alpha < \beta \lor \beta < \alpha \lor \alpha = \beta$.
 If $\alpha < \beta$ then $\alpha \subseteq \beta$ and thus: $\alpha \cap \beta = \alpha$ which implies that $\alpha \cap \beta = \alpha = \min \left\\{ \alpha,\beta \right\\}$.
@@ -373,20 +349,16 @@ If $\alpha = \beta$ then $\alpha \cap \beta = \alpha$ which implies that $\alpha
 
 More generally, the following holds:
 
-
 $$
 \forall X \left(
         \mathrm{ON_C}\left(X\right) \land X \neq \emptyset \Longrightarrow \mathrm{ON}\left( \bigcap X \right) \land \bigcap X = \min X
     \right)
 $$
 
-
-
 In order to prove this, one may let $X$ be a set such that $\mathrm{ON_C}\left(X\right) \land X \neq \emptyset$.
 
 Firstly, one may observe that $\displaystyle \mathrm{TR}\left(\bigcap X\right)$.
 In addition:
-
 
 $$
 \begin{split}
@@ -396,8 +368,6 @@ $$
 \end{split}
 $$
 
-
-
 Therefore, because $\displaystyle \bigcap X$ is a transitive set of ordinals, then $\displaystyle \mathrm{ON}\left(\bigcap X\right)$.
 
 One may then observe that $\exists \alpha \in X: \forall \beta \in X: \alpha \neq \beta \Longrightarrow \alpha < \beta$.
@@ -405,7 +375,6 @@ Hence: $\forall \beta \in X: \alpha \leq \beta$ which implies that $\min X = \al
 
 Firstly, one may observe that because $\alpha \in X$ then $\displaystyle \bigcap X \subseteq \alpha$.
 In addition:
-
 
 $$
 \begin{split}
@@ -416,12 +385,10 @@ $$
 \end{split}
 $$
 
-
 Therefore: $\displaystyle \alpha = \bigcap X$. $\blacksquare$
 
 ## Order-Isomorphic Ordinals
 The following holds:
-
 
 $$
 \forall \alpha,\beta,F \left(
@@ -442,7 +409,6 @@ Let $\gamma \in \alpha$. Firstly, let $\delta \in F\left(\gamma\right)$. Then $\
 
 Let $X = \left\\{ \varepsilon \in \alpha : F\left(\varepsilon\right) \neq \varepsilon \right\\}$ and assume that $X \neq \emptyset$. Then $\exists \gamma \in X: \forall \varepsilon \in X: \gamma \leq \varepsilon$. Therefore: $\forall \varepsilon \in \alpha: \varepsilon < \gamma \Longrightarrow \varepsilon \not\in X \Longrightarrow F\left(\varepsilon\right) = \varepsilon$. This implies that $F\left(\gamma\right) = \left\\{ \delta \in \beta : \exists \varepsilon \in \alpha \left( \varepsilon < \gamma \land F\left( \varepsilon \right) = \delta \right) \right\\}$ but since $\varepsilon < \gamma$ implies $F\left(\varepsilon\right) = \varepsilon$ the statement becomes $F\left(\gamma\right) = \left\\{ \delta \in \beta : \exists \varepsilon \in \alpha \left( \varepsilon < \gamma \land \varepsilon = \delta \right) \right\\}$. In addition:
 
-
 $$
 \begin{split}
     \forall \delta ( \delta \in \gamma \iff & \delta \in \gamma \land \delta \in \alpha \\
@@ -450,8 +416,6 @@ $$
     \iff & \delta \in F\left(\gamma\right) )
 \end{split}
 $$
-
-
 
 And therefore: $F\left(\gamma\right) = \gamma$, a contradiction (because $\gamma \in X$).
 
@@ -462,20 +426,18 @@ Hence: $X = \emptyset$ and thus: $F = \mathrm{id}_\alpha$ which implies that $\a
 ## Definition Of Successor
 Let $\alpha$ be an ordinal. Then the set $\alpha \cup \left\\{\alpha\right\\}$, denoted $S\left(\alpha\right)$, is called the successor ordinal of $\alpha$.
 
-
 $$
 \forall \alpha \left( S\left(\alpha\right) = \alpha \cup \left\\{ \alpha \right\\} \right)
 $$
 
-
 ### Successor is an ordinal
 The following holds:
+
 $$
 \forall \alpha \left(
         \mathrm{ON}\left(\alpha\right) \Longrightarrow \mathrm{ON}\left(S\left(\alpha\right)\right)
     \right)
 $$
-
 
 In order to prove this, one may let $\alpha$ be an ordinal. Firstly, because $\mathrm{ON_C}\left(\alpha\right) \land \mathrm{ON}\left(\alpha\right)$ then $\mathrm{ON_C}\left(S\left(\alpha\right)\right)$.
 
@@ -485,6 +447,7 @@ Hence, because $S\left(\alpha\right)$ is a transitive set of ordinals, then it's
 
 ### Characteristic Property
 The following holds:
+
 $$
 \forall \alpha, \beta \left(
         \mathrm{ON}\left(\alpha,\beta\right) \Longrightarrow
@@ -495,9 +458,9 @@ $$
     \right)
 $$
 
-
 In order to prove this, one may let $\alpha$ and $\beta$ be ordinals.
 Then:
+
 $$
 \begin{split}
     \beta < S\left(\alpha\right) \iff & \beta \in S\left(\alpha\right) \\
@@ -506,12 +469,10 @@ $$
 \end{split}
 $$
 
-
 Therefore, the condition holds. $\blacksquare$
 
 ### Successor Is Greater
 The following holds:
-
 
 $$
 \forall \alpha \left(
@@ -519,12 +480,12 @@ $$
     \right)
 $$
 
-
 In order to prove this, one may let $\alpha$ be an ordinal. Then $\alpha \in S\left(\alpha\right)$ which is equivalent to $\alpha < S\left(\alpha\right)$. $\blacksquare$
 
 
 ## Types Of Ordinals
 One may define the following:
+
 $$
 \forall \alpha \left(
         \mathrm{ON_S}\left( \alpha \right) \iff \mathrm{ON}\left(\alpha\right) \land \exists \beta \left( \mathrm{ON}\left(\beta\right) \land S\left(\beta\right) = \alpha \right)
@@ -557,6 +518,7 @@ If $\mathrm{ON_F}\left( \alpha \right)$ then $\alpha$ is called a finite ordinal
 
 ### Successor Of A Finite Ordinal
 The following holds:
+
 $$
 \forall n \left(
         \mathrm{ON_F}\left( n \right) \Longrightarrow
@@ -567,6 +529,7 @@ $$
 
 In order to prove this, one may let $n$ be a finite ordinal and $n^{+} = S\left(n\right)$.
 Hence, by definition of finite ordinals: $\forall \beta \left( \mathrm{ON}\left(\beta\right) \land \beta \leq n \Longrightarrow \beta = \emptyset \lor \mathrm{ON_S}\left(\beta\right) \right)$. Therefore:
+
 $$
 \begin{split}
     \forall \beta (
@@ -577,9 +540,7 @@ $$
 \end{split}
 $$
 
-
 Thus, because $\beta = S\left(n\right) \Longrightarrow \mathrm{ON_S}\left(\beta\right)$ then:
-
 
 $$
 \forall \beta \left(
@@ -588,12 +549,10 @@ $$
     \right)
 $$
 
-
 This implies that $S\left(n\right)$ is a finite ordinal. $\blacksquare$
 
 ### A Finite Ordinal Is A Set Of Finite Ordinals
 The following holds:
-
 
 $$
 \forall n \left(
@@ -602,9 +561,7 @@ $$
     \right)
 $$
 
-
 In order to prove this, one may let $n$ be a finite ordinal and $k \in n$. Then:
-
 
 $$
 \begin{split}
@@ -618,13 +575,10 @@ $$
 \end{split}
 $$
 
-
 This implies that $\mathrm{ON_F}\left(k\right)$. $\blacksquare$
-
 
 ### Principle of Ordinary Induction
 The following holds:
-
 
 $$
 \forall X \left(
@@ -641,7 +595,6 @@ $$
     \right)
 $$
 
-
 In order to prove this, one may let $X$ be a set such that $\emptyset \in X \land \left(\forall x \in X: S\left(x\right) \in X \right)$.
 Assume that $\exists n \left( \mathrm{ON_F}\left(n\right) \land n \not\in X \right)$ and let $Y = S\left(n\right) \setminus X$.
 Firstly, one may observe that because $Y \subseteq S\left(n\right)$ then $\forall u \in Y: \mathrm{ON_F}\left(u\right)$.
@@ -652,20 +605,16 @@ Therefore, because $i \not\in Y$ then $i \in X$ which implies that $k = S\left(i
 ### The Set Of All Finite Ordinals
 One may use the axiom of infinity and observe the following:
 
-
 $$
 \exists \mathcal{I} \left( \emptyset \in \mathcal{I} \land \forall x \left( x \in \mathcal{I} \Longrightarrow S\left(x\right) \in \mathcal{I} \right) \right)
 $$
 
-
 Hence, by the principle of ordinary induction: $\forall n \left( \mathrm{ON_F}\left(n\right) \Longrightarrow n \in \mathcal{I} \right)$.
 Therefore, one may use the axiom schema of specification and define the following set:
-
 
 $$
 \omega = \left\\{ n \in \mathcal{I} : \mathrm{ON_F}\left(n\right) \right\\}
 $$
-
 
 The set $\omega$ satisfies $\forall n \left( n \in \omega \iff \mathrm{ON_F}\left( n \right) \right)$.
 
@@ -677,6 +626,7 @@ In order to prove this, one may let $X = \left\\{ n \in \omega : \phi\left(n\rig
 
 ### Initial Segment Lemma
 The following holds:
+
 $$
 \forall X \left(
         \mathrm{ON_C}\left(X\right) \land
@@ -688,9 +638,7 @@ $$
     \right)
 $$
 
-
 In order to prove this, one may first observe that because $\mathrm{ON_C}\left(X\right)$ then $\mathfrak{W}\left(\in_X, X\right)$. In addition:
-
 
 $$
 \begin{split}
@@ -699,12 +647,10 @@ $$
 \end{split}
 $$
 
-
 Therefore, $X$ is a transitive set which implies that $X$ is an ordinal. $\blacksquare$
 
 ### ω is the least limit ordinal
 The following holds:
-
 
 $$
 \forall \alpha \left(
@@ -712,15 +658,14 @@ $$
     \right)
 $$
 
-
 In order to prove this, one may first observe that $\mathrm{ON_C}\left(\omega\right)$ and:
+
 $$
  \forall n \in \omega: \forall k \left(
         \mathrm{ON}\left(k\right) \land k < n \Longrightarrow
         k \in \omega
     \right)
 $$
-
 
 Therefore, by the initial segment lemma: $\mathrm{ON}\left(\omega\right)$. In addition, because $\emptyset \in \omega$ then $\omega \neq \emptyset$.
 
@@ -730,4 +675,3 @@ Assume that $\mathrm{ON_S}\left(\omega\right)$, then $\exists k \left( \mathrm{O
 Therefore: $\mathrm{ON_L}\left(\omega\right)$.
 
 One may then assume that $\exists \gamma \left( \mathrm{ON_L}\left(\gamma\right) \land \gamma < \omega \right)$. Then $\gamma \in \omega$ which implies that $\forall \beta \left( \mathrm{ON}\left(\beta\right) \land \beta \leq \gamma \Longrightarrow \beta = \emptyset \lor \mathrm{ON_S}\left(\beta\right) \right)$. Hence: $\gamma = \emptyset \lor \mathrm{ON_S}\left(\gamma\right)$ which is a contradiction. $\blacksquare$
-
