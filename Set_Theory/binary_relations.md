@@ -128,7 +128,7 @@ Then for every member $a \in S$, the equivalence class of $a$ with respect to $\
 denoted $\left[a\right]_\sim$, is defined as:
 
 $$
-	\forall S \forall \sim \left( \mathrm{Eq}\left(\sim,S\right) \Longrightarrow \forall a \in S : \left[a\right]_\sim := \left\{ x \in S : x \sim a \right\} \right)
+	\forall S \forall \sim \left( \mathrm{Eq}\left(\sim,S\right) \Longrightarrow \forall a \in S : \left[a\right]_\sim := \left\\{ x \in S : x \sim a \right\\} \right)
 $$
 
 In addition, one may observe the following:
@@ -174,7 +174,7 @@ Therefore: $\left[a\right]_\sim = \left[b\right]_\sim$, and thus, the condition 
 The quotient set of a set $X$ by an equivalence relation $R$, denoted $X/R$, is defined as follows:
 
 $$
-	\forall X \forall R \left( \mathrm{Eq}\left(R,X\right) \Longrightarrow X/R \, := \left\{ C \in \mathcal{P}\left(X\right) : \exists a \left( a \in X \land C = \left[a\right]_R \right) \right\} \right)
+	\forall X \forall R \left( \mathrm{Eq}\left(R,X\right) \Longrightarrow X/R \, := \left\\{ C \in \mathcal{P}\left(X\right) : \exists a \left( a \in X \land C = \left[a\right]_R \right) \right\\} \right)
 $$
 
 ##### Quotient Set Is A Partition
@@ -279,7 +279,7 @@ $$
 In order to prove this, one may let $X$ be a set.
 
 
-Firstly, one may assume that $\exists \leq \left( \mathrm{PO_{ns}}\left(\leq, X\right) \right)$ and let $< \; = \left\{ p \in \; \leq \; : \; \exists x,y \in X \left( x \neq y \land x \leq y \land p = \langle x,y \rangle \right) \right\}$. One may then observe that $\forall x \in X: \lnot\left( x < x \right)$. In addition, let $x$,$y$, and $z$ be sets such that $x,y,z \in X$ and $x < y \land y < z$. Hence: $x \neq y \land y \neq z$.
+Firstly, one may assume that $\exists \leq \left( \mathrm{PO_{ns}}\left(\leq, X\right) \right)$ and let $< \; = \left\\{ p \in \; \leq \; : \; \exists x,y \in X \left( x \neq y \land x \leq y \land p = \langle x,y \rangle \right) \right\\}$. One may then observe that $\forall x \in X: \lnot\left( x < x \right)$. In addition, let $x$,$y$, and $z$ be sets such that $x,y,z \in X$ and $x < y \land y < z$. Hence: $x \neq y \land y \neq z$.
 
 Assume that $x = z$, then $x \leq y \land y \leq x$ and thus, by definition of non-strict partial orders: $x = y$, a contradiction. Thus: $x \neq z$. In addition, by transitivity and definition of $<$:
 
@@ -293,7 +293,7 @@ $$
 Hence: $\mathrm{PO_{s}}\left(<, X\right)$.
 
 
-One may then assume that $\exists < \left( \mathrm{PO_s}\left(<, X\right) \right)$ and let $\leq \; = \left\{ p \in X \times X : \exists x,y \in X \left( \left( x < y \lor x = y \right) \land p = \langle x,y \rangle \right) \right\}$. Hence: $\forall x \in X: x \leq x$. In addition, let $x$ and $y$ be sets such that $x \leq y \land y \leq x$. Assume that $x \neq y$, then $x < y \land y < x$ which contradicts the asymmetry of strict partial orders. Hence: $\forall x,y \in X: x \leq y \land y \leq x \Rightarrow x = y$. One may then let $x$, $y$ and $z$ be sets such that $x \leq y \land y \leq z$. If $x = y$ or $y = z$ then $x \leq z$. Otherwise, if $x \neq y \land y \neq z$ then: $x < y \land y < z$ and thus: $x < z$ which implies $x \leq z$. Hence: $\mathrm{PO_{ns}}\left(\leq, X\right)$. $\blacksquare$
+One may then assume that $\exists < \left( \mathrm{PO_s}\left(<, X\right) \right)$ and let $\leq \; = \left\\{ p \in X \times X : \exists x,y \in X \left( \left( x < y \lor x = y \right) \land p = \langle x,y \rangle \right) \right\\}$. Hence: $\forall x \in X: x \leq x$. In addition, let $x$ and $y$ be sets such that $x \leq y \land y \leq x$. Assume that $x \neq y$, then $x < y \land y < x$ which contradicts the asymmetry of strict partial orders. Hence: $\forall x,y \in X: x \leq y \land y \leq x \Rightarrow x = y$. One may then let $x$, $y$ and $z$ be sets such that $x \leq y \land y \leq z$. If $x = y$ or $y = z$ then $x \leq z$. Otherwise, if $x \neq y \land y \neq z$ then: $x < y \land y < z$ and thus: $x < z$ which implies $x \leq z$. Hence: $\mathrm{PO_{ns}}\left(\leq, X\right)$. $\blacksquare$
 
 
 Therefore, if $R$ is a partial order (non-strict or strict) on $X$,
@@ -467,7 +467,7 @@ In order to prove this, one may first assume that $X$ and $<$ are sets such that
 $\mathrm{TO_s}\left(<, X\right)$, then the condition holds, as was proved above.
 
 One may then assume that $X$ and $<$ are sets such that $<$ is irreflexive, transitive
-and trichotomous and let $\leq \, = \, < \, \cup \left\{ p \in X \times X : \exists x \in X: p = \langle x, x \rangle \right\}$.
+and trichotomous and let $\leq \, = \, < \, \cup \left\\{ p \in X \times X : \exists x \in X: p = \langle x, x \rangle \right\\}$.
 Firstly, one may observe that $\forall x,y \in X: x < y \iff x \leq y \land x \neq y$.
 
 In addition, one may let $x,y \in X$ and assume that $x \leq y \land y \leq x$.
@@ -496,7 +496,7 @@ $$
 In order to prove this, one may let $X$ be a set.
 
 Firstly, one may assume that $\exists \leq \left( \mathrm{TO_{ns}}\left(\leq, X\right) \right)$
-and let $< \; = \left\{ p \in \; \leq \; : \exists x,y \in X \left( x \leq y \land x \neq y \land p = \langle x,y \rangle \right) \right\}$.
+and let $< \; = \left\\{ p \in \; \leq \; : \exists x,y \in X \left( x \leq y \land x \neq y \land p = \langle x,y \rangle \right) \right\\}$.
 Therefore, since $\forall x,y \in X: x \leq y \iff \langle x,y \rangle \in \; \leq$ then $\forall x,y \in X: x < y \iff x \leq y \land x \neq y$
 and thus: $\mathrm{TO_s}\left(<, X\right)$.
 
@@ -523,7 +523,7 @@ $$
 \begin{split}
 	\forall X \forall R (
 		\mathfrak{W}\left(R, X\right) \iff & \mathrm{TO}\left(R,X\right) \land \\
-		& \forall S \in \mathcal{P}\left(X\right) \setminus \left\{\emptyset\right\} \, \exists m \in S \left( \forall x \in S \left( x \neq m \Longrightarrow m \, R \, x \right) \right)
+		& \forall S \in \mathcal{P}\left(X\right) \setminus \left\\{\emptyset\right\\} \, \exists m \in S \left( \forall x \in S \left( x \neq m \Longrightarrow m \, R \, x \right) \right)
 	)
 \end{split}
 $$
@@ -534,7 +534,7 @@ One may define the following:
 $$
 	\forall X \forall R \forall a \left(
 		\mathfrak{W}\left(R, X\right) \land a \in X \Longrightarrow
-		\mathrm{Seg}_{X,R} \left(a\right) := \left\{ x \in X : x \; R \; a \land x \neq a \right\}
+		\mathrm{Seg}_{X,R} \left(a\right) := \left\\{ x \in X : x \; R \; a \land x \neq a \right\\}
 	\right)
 $$
 
@@ -570,9 +570,9 @@ Firstly, assume that $x,y \in Y$ such that $x \, \mathcal{Q} \, y$, then $x \, R
 
 One may then assume that $x,y \in Y$ such that $x \, \mathcal{Q}^\ast \, y \land x \neq y$, then $x \, R^\ast \, y \land x \neq y$ which is equivalent to $x \, R \, y$ and thus, because $x,y \in Y$: $x \, \mathcal{Q} \, y$. Therefore: $\mathrm{TO_s}\left(\mathcal{Q}, Y\right)$.
 
-Either way: $\mathrm{TO}\left(\mathcal{Q}, Y\right)$. One may then let $S \in \mathcal{P}\left(Y\right) \setminus \left\{\emptyset\right\}$.
-Therefore, because $\mathcal{P}\left(Y\right) \setminus \left\{\emptyset\right\} \subseteq \mathcal{P}\left(X\right) \setminus \left\{\emptyset\right\}$
-then $S \in \mathcal{P}\left(X\right) \setminus \left\{\emptyset\right\}$ which implies that
+Either way: $\mathrm{TO}\left(\mathcal{Q}, Y\right)$. One may then let $S \in \mathcal{P}\left(Y\right) \setminus \left\\{\emptyset\right\\}$.
+Therefore, because $\mathcal{P}\left(Y\right) \setminus \left\\{\emptyset\right\\} \subseteq \mathcal{P}\left(X\right) \setminus \left\\{\emptyset\right\\}$
+then $S \in \mathcal{P}\left(X\right) \setminus \left\\{\emptyset\right\\}$ which implies that
 
 $$
 	\exists m \in S \left( \forall x \in S \left( x \neq m \Longrightarrow m \, R \, x \Longrightarrow m \, \mathcal{Q} \, x \right) \right)

@@ -93,7 +93,7 @@ For convenience, one may define the following notation:
 
 
 $$
-\forall \alpha \left( \in_{\alpha} = \left\{ p \in \alpha \times \alpha : \exists x,y \in \alpha \left( x \in y \land p = \langle x,y \rangle \right) \right\} \right)
+\forall \alpha \left( \in_{\alpha} = \left\\{ p \in \alpha \times \alpha : \exists x,y \in \alpha \left( x \in y \land p = \langle x,y \rangle \right) \right\\} \right)
 $$
 
 
@@ -263,7 +263,7 @@ Proof of this is presented below.
   Therefore, if $\delta = \alpha \lor \delta = \beta$ then the condition is met. Assume that $\lnot \left( \delta = \alpha \lor \delta = \beta \right) \iff \delta \neq \alpha \land \delta \neq \beta$, then $\delta \in \alpha \land \delta \in \beta$, meaning $\delta \in \alpha \cap \beta = \delta$, a contradiction. Therefore: $\delta = \alpha \lor \delta = \beta$, and thus, the condition holds.
   
 * Let $S$ be a set such that $S \neq \emptyset \land \forall \alpha \in S: \mathrm{ON}\left(\alpha\right)$ and let $\alpha \in S$.
-  If $\forall \beta \in S: \alpha \neq \beta \Longrightarrow \alpha < \beta$ then the condition holds. Otherwise ($\exists \beta \in S: \alpha \neq \beta \land \beta < \alpha$) then one may observe that $\alpha \cap S = \left\{\gamma \in S : \gamma \in \alpha\right\} = \left\{\gamma \in S : \gamma < \alpha\right\} \neq \emptyset$. Hence, because $\alpha \cap S \subseteq \alpha$ then $\exists \delta \in \alpha \cap S: \forall \varepsilon \in \alpha \cap S: \delta \neq \varepsilon \Longrightarrow \delta < \varepsilon$. One may observe that because $\delta \in \alpha \cap S$ then $\delta < \alpha$. Therefore, one may let $\varepsilon \in S$ such that $\varepsilon \neq \delta$ and observe that $\varepsilon = \alpha \lor \varepsilon < \alpha \lor \alpha < \varepsilon$. If $\varepsilon = \alpha$ then $\delta < \varepsilon$. If $\varepsilon < \alpha$ then $\varepsilon < \alpha \land \varepsilon \in S$ which implies that $\varepsilon \in \alpha \cap S$ and thus: $\delta < \varepsilon$. If $\alpha < \varepsilon$ then $\delta < \alpha \land \alpha < \varepsilon \Longrightarrow \delta < \varepsilon$. Therefore, the condition holds. $\blacksquare$
+  If $\forall \beta \in S: \alpha \neq \beta \Longrightarrow \alpha < \beta$ then the condition holds. Otherwise ($\exists \beta \in S: \alpha \neq \beta \land \beta < \alpha$) then one may observe that $\alpha \cap S = \left\\{\gamma \in S : \gamma \in \alpha\right\\} = \left\\{\gamma \in S : \gamma < \alpha\right\\} \neq \emptyset$. Hence, because $\alpha \cap S \subseteq \alpha$ then $\exists \delta \in \alpha \cap S: \forall \varepsilon \in \alpha \cap S: \delta \neq \varepsilon \Longrightarrow \delta < \varepsilon$. One may observe that because $\delta \in \alpha \cap S$ then $\delta < \alpha$. Therefore, one may let $\varepsilon \in S$ such that $\varepsilon \neq \delta$ and observe that $\varepsilon = \alpha \lor \varepsilon < \alpha \lor \alpha < \varepsilon$. If $\varepsilon = \alpha$ then $\delta < \varepsilon$. If $\varepsilon < \alpha$ then $\varepsilon < \alpha \land \varepsilon \in S$ which implies that $\varepsilon \in \alpha \cap S$ and thus: $\delta < \varepsilon$. If $\alpha < \varepsilon$ then $\delta < \alpha \land \alpha < \varepsilon \Longrightarrow \delta < \varepsilon$. Therefore, the condition holds. $\blacksquare$
 
 This result implies that $\forall X \left( \mathrm{ON_C}\left(X\right) \Longrightarrow \mathfrak{W}\left(\in_X, X\right) \right)$.
 
@@ -303,7 +303,7 @@ The following holds:
 
 
 $$
-\forall \alpha, \beta \left( \mathrm{ON}\left(\alpha,\beta\right) \Longrightarrow \mathrm{ON}\left( \alpha \cup \beta \right) \land \alpha \cup \beta = \max \left\{ \alpha, \beta \right\} \right)
+\forall \alpha, \beta \left( \mathrm{ON}\left(\alpha,\beta\right) \Longrightarrow \mathrm{ON}\left( \alpha \cup \beta \right) \land \alpha \cup \beta = \max \left\\{ \alpha, \beta \right\\} \right)
 $$
 
 
@@ -313,11 +313,11 @@ In order to prove this, one may let $\alpha$ and $\beta$ be ordinals.
 Firstly, one may use the TR lemma and observe that $\mathrm{ON_C}\left(\alpha \cup \beta \right)$ and thus: $\mathfrak{W}\left( \in_{\alpha \cup \beta}, \alpha \cup \beta \right)$. In addition: $\mathrm{TR}\left(\alpha \cup \beta\right)$. Therefore: $\mathrm{ON}\left(\alpha \cup \beta\right)$.
 
 
-One may then observe that $\alpha < \beta \lor \beta < \alpha \lor \alpha = \beta$. If $\alpha = \beta$ then $\max \left\{ \alpha, \beta \right\} = \alpha = \alpha \cup \beta$.
+One may then observe that $\alpha < \beta \lor \beta < \alpha \lor \alpha = \beta$. If $\alpha = \beta$ then $\max \left\\{ \alpha, \beta \right\\} = \alpha = \alpha \cup \beta$.
 
-If $\alpha < \beta$ then $\alpha \in \beta$ which implies that $\alpha \subseteq \beta$. Hence: $\alpha \cup \beta = \beta$ and thus: $\max \left\{ \alpha, \beta \right\} = \beta = \alpha \cup \beta$.
+If $\alpha < \beta$ then $\alpha \in \beta$ which implies that $\alpha \subseteq \beta$. Hence: $\alpha \cup \beta = \beta$ and thus: $\max \left\\{ \alpha, \beta \right\\} = \beta = \alpha \cup \beta$.
 
-If $\beta < \alpha$ then $\beta \in \alpha$ which implies that $\beta \subseteq \alpha$. Hence: $\alpha \cup \beta = \alpha$ and thus: $\max \left\{ \alpha, \beta \right\} = \alpha = \alpha \cup \beta$. $\blacksquare$
+If $\beta < \alpha$ then $\beta \in \alpha$ which implies that $\beta \subseteq \alpha$. Hence: $\alpha \cup \beta = \alpha$ and thus: $\max \left\\{ \alpha, \beta \right\\} = \alpha = \alpha \cup \beta$. $\blacksquare$
 
 
 In addition, the following holds:
@@ -362,14 +362,14 @@ $x \in y \land y \leq U$ which is equivalent to $x \in y \land y \subseteq U$ an
 ### Intersection
 The following holds:
 $$
-\forall \alpha, \beta \left( \mathrm{ON}\left(\alpha,\beta\right) \Longrightarrow \alpha \cap \beta = \min \left\{ \alpha, \beta \right\} \right)
+\forall \alpha, \beta \left( \mathrm{ON}\left(\alpha,\beta\right) \Longrightarrow \alpha \cap \beta = \min \left\\{ \alpha, \beta \right\\} \right)
 $$
 
 
 In order to prove this, one may let $\alpha$ and $\beta$ be ordinals. By the intersection lemma: $\mathrm{ON}\left(\alpha \cap \beta\right)$. In addition, by the well-orderedness of the ordinals: $\alpha < \beta \lor \beta < \alpha \lor \alpha = \beta$.
-If $\alpha < \beta$ then $\alpha \subseteq \beta$ and thus: $\alpha \cap \beta = \alpha$ which implies that $\alpha \cap \beta = \alpha = \min \left\{ \alpha,\beta \right\}$.
-If $\beta < \alpha$ then $\beta \subseteq \alpha$ and thus: $\alpha \cap \beta = \beta$ which implies that $\alpha \cap \beta = \beta = \min \left\{ \alpha,\beta \right\}$.
-If $\alpha = \beta$ then $\alpha \cap \beta = \alpha$ which implies that $\alpha \cap \beta = \alpha = \min \left\{ \alpha,\beta \right\}$. $\blacksquare$
+If $\alpha < \beta$ then $\alpha \subseteq \beta$ and thus: $\alpha \cap \beta = \alpha$ which implies that $\alpha \cap \beta = \alpha = \min \left\\{ \alpha,\beta \right\\}$.
+If $\beta < \alpha$ then $\beta \subseteq \alpha$ and thus: $\alpha \cap \beta = \beta$ which implies that $\alpha \cap \beta = \beta = \min \left\\{ \alpha,\beta \right\\}$.
+If $\alpha = \beta$ then $\alpha \cap \beta = \alpha$ which implies that $\alpha \cap \beta = \alpha = \min \left\\{ \alpha,\beta \right\\}$. $\blacksquare$
 
 More generally, the following holds:
 
@@ -436,11 +436,11 @@ $$
 
 In order to prove this, one may let $\alpha$ and $\beta$ be ordinals and let $F$ be an order isomorphism. That is: $F\left[\alpha \rightarrow \beta\right] \land \left( \forall \gamma, \delta \in \alpha: \gamma < \delta \iff F\left(\gamma\right) < F\left(\delta\right) \right)$.
 
-One may first prove that $\forall \gamma \in \alpha: F\left(\gamma\right) = \left\{ \delta \in \beta : \exists \varepsilon \in \alpha \left( \varepsilon < \gamma \land F\left( \varepsilon \right) = \delta \right) \right\}$.
+One may first prove that $\forall \gamma \in \alpha: F\left(\gamma\right) = \left\\{ \delta \in \beta : \exists \varepsilon \in \alpha \left( \varepsilon < \gamma \land F\left( \varepsilon \right) = \delta \right) \right\\}$.
 
-Let $\gamma \in \alpha$. Firstly, let $\delta \in F\left(\gamma\right)$. Then $\exists \varepsilon \in \alpha \left( F\left(\varepsilon\right) = \delta \right)$ and therefore: $\delta \in F\left(\gamma\right) \iff F\left(\varepsilon\right) < F\left(\gamma\right) \iff \varepsilon < \gamma$. One may then let $\delta \in \beta$ such that $\exists \varepsilon \in \alpha \left( \varepsilon < \gamma \land F\left( \varepsilon \right) = \delta \right)$. Then $\varepsilon < \gamma \iff \delta < F\left(\gamma\right) \iff \delta \in F\left(\gamma\right)$. Hence: $F\left(\gamma\right) = \left\{ \delta \in \beta : \exists \varepsilon \in \alpha \left( \varepsilon < \gamma \land F\left( \varepsilon \right) = \delta \right) \right\}$.
+Let $\gamma \in \alpha$. Firstly, let $\delta \in F\left(\gamma\right)$. Then $\exists \varepsilon \in \alpha \left( F\left(\varepsilon\right) = \delta \right)$ and therefore: $\delta \in F\left(\gamma\right) \iff F\left(\varepsilon\right) < F\left(\gamma\right) \iff \varepsilon < \gamma$. One may then let $\delta \in \beta$ such that $\exists \varepsilon \in \alpha \left( \varepsilon < \gamma \land F\left( \varepsilon \right) = \delta \right)$. Then $\varepsilon < \gamma \iff \delta < F\left(\gamma\right) \iff \delta \in F\left(\gamma\right)$. Hence: $F\left(\gamma\right) = \left\\{ \delta \in \beta : \exists \varepsilon \in \alpha \left( \varepsilon < \gamma \land F\left( \varepsilon \right) = \delta \right) \right\\}$.
 
-Let $X = \left\{ \varepsilon \in \alpha : F\left(\varepsilon\right) \neq \varepsilon \right\}$ and assume that $X \neq \emptyset$. Then $\exists \gamma \in X: \forall \varepsilon \in X: \gamma \leq \varepsilon$. Therefore: $\forall \varepsilon \in \alpha: \varepsilon < \gamma \Longrightarrow \varepsilon \not\in X \Longrightarrow F\left(\varepsilon\right) = \varepsilon$. This implies that $F\left(\gamma\right) = \left\{ \delta \in \beta : \exists \varepsilon \in \alpha \left( \varepsilon < \gamma \land F\left( \varepsilon \right) = \delta \right) \right\}$ but since $\varepsilon < \gamma$ implies $F\left(\varepsilon\right) = \varepsilon$ the statement becomes $F\left(\gamma\right) = \left\{ \delta \in \beta : \exists \varepsilon \in \alpha \left( \varepsilon < \gamma \land \varepsilon = \delta \right) \right\}$. In addition:
+Let $X = \left\\{ \varepsilon \in \alpha : F\left(\varepsilon\right) \neq \varepsilon \right\\}$ and assume that $X \neq \emptyset$. Then $\exists \gamma \in X: \forall \varepsilon \in X: \gamma \leq \varepsilon$. Therefore: $\forall \varepsilon \in \alpha: \varepsilon < \gamma \Longrightarrow \varepsilon \not\in X \Longrightarrow F\left(\varepsilon\right) = \varepsilon$. This implies that $F\left(\gamma\right) = \left\\{ \delta \in \beta : \exists \varepsilon \in \alpha \left( \varepsilon < \gamma \land F\left( \varepsilon \right) = \delta \right) \right\\}$ but since $\varepsilon < \gamma$ implies $F\left(\varepsilon\right) = \varepsilon$ the statement becomes $F\left(\gamma\right) = \left\\{ \delta \in \beta : \exists \varepsilon \in \alpha \left( \varepsilon < \gamma \land \varepsilon = \delta \right) \right\\}$. In addition:
 
 
 $$
@@ -460,11 +460,11 @@ Hence: $X = \emptyset$ and thus: $F = \mathrm{id}_\alpha$ which implies that $\a
 
 
 ## Definition Of Successor
-Let $\alpha$ be an ordinal. Then the set $\alpha \cup \left\{\alpha\right\}$, denoted $S\left(\alpha\right)$, is called the successor ordinal of $\alpha$.
+Let $\alpha$ be an ordinal. Then the set $\alpha \cup \left\\{\alpha\right\\}$, denoted $S\left(\alpha\right)$, is called the successor ordinal of $\alpha$.
 
 
 $$
-\forall \alpha \left( S\left(\alpha\right) = \alpha \cup \left\{ \alpha \right\} \right)
+\forall \alpha \left( S\left(\alpha\right) = \alpha \cup \left\\{ \alpha \right\\} \right)
 $$
 
 
@@ -663,7 +663,7 @@ Therefore, one may use the axiom schema of specification and define the followin
 
 
 $$
-\omega = \left\{ n \in \mathcal{I} : \mathrm{ON_F}\left(n\right) \right\}
+\omega = \left\\{ n \in \mathcal{I} : \mathrm{ON_F}\left(n\right) \right\\}
 $$
 
 
@@ -672,7 +672,7 @@ The set $\omega$ satisfies $\forall n \left( n \in \omega \iff \mathrm{ON_F}\lef
 ### Proof By Induction
 Let $\phi\left(n\right)$ be a formula such that the following holds: $\phi\left(\emptyset\right) \land \forall n \in \omega: \phi\left(n\right) \Longrightarrow \phi\left(S\left(n\right)\right)$. Then: $\forall n \in \omega: \phi\left(n\right)$.
 
-In order to prove this, one may let $X = \left\{ n \in \omega : \phi\left(n\right) \right\}$ and observe that $\emptyset \in X \land \forall n \in X: S\left(n\right) \in X$. Therefore, by the principle of ordinary induction: $X = \omega$ which implies that $\forall n \in \omega: \phi\left(n\right)$. $\blacksquare$
+In order to prove this, one may let $X = \left\\{ n \in \omega : \phi\left(n\right) \right\\}$ and observe that $\emptyset \in X \land \forall n \in X: S\left(n\right) \in X$. Therefore, by the principle of ordinary induction: $X = \omega$ which implies that $\forall n \in \omega: \phi\left(n\right)$. $\blacksquare$
 
 
 ### Initial Segment Lemma

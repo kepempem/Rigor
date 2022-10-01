@@ -22,8 +22,8 @@ $$
 In order to prove this, let $F$, $x$ and $y$ be sets such that $\langle x, y \rangle \in F$. Then:
 $$
 \begin{split}
-    & \langle x, y \rangle = \left\{ \left\{x\right\}, \left\{x,y\right\} \right\} \in F \\
-    \Longrightarrow & \left\{ x, y \right\} \in \bigcup F \\
+    & \langle x, y \rangle = \left\\{ \left\\{x\right\\}, \left\\{x,y\right\\} \right\\} \in F \\
+    \Longrightarrow & \left\\{ x, y \right\\} \in \bigcup F \\
     \Longrightarrow & x \in \bigcup \left( \bigcup F \right) \land y \in \bigcup \left( \bigcup F \right)
 \end{split}
 $$
@@ -33,14 +33,14 @@ $$
 
 The domain of a function $F$, denoted $\mathrm{Dom}\left(F\right)$ is defined as follows:
 $$
-\forall F \left( \mathrm{Func}\left(F\right) \Longrightarrow \mathrm{Dom}\left(F\right) := \left\{ x \in \bigcup \left( \bigcup F \right) \; \vert \; \exists y \left( \langle x, y \rangle \in F \right) \right\} \right)
+\forall F \left( \mathrm{Func}\left(F\right) \Longrightarrow \mathrm{Dom}\left(F\right) := \left\\{ x \in \bigcup \left( \bigcup F \right) \; \vert \; \exists y \left( \langle x, y \rangle \in F \right) \right\\} \right)
 $$
 
 
 ## Range
 The range of a function $F$, denoted $\mathrm{Range}\left(F\right)$ is defined as follows:
 $$
-\forall F \left( \mathrm{Func}\left(F\right) \Longrightarrow \mathrm{Range}\left( F \right) := \left\{ y \in \bigcup \left( \bigcup F \right) \; \vert \; \exists x \left( \langle x, y \rangle \in F \right) \right\} \right)
+\forall F \left( \mathrm{Func}\left(F\right) \Longrightarrow \mathrm{Range}\left( F \right) := \left\\{ y \in \bigcup \left( \bigcup F \right) \; \vert \; \exists x \left( \langle x, y \rangle \in F \right) \right\\} \right)
 $$
 
 
@@ -48,7 +48,7 @@ $$
 Given a function $F$ and a set $X$ such that $X \subseteq \mathrm{Dom}\left(F\right)$,
 the restriction of the function $F$ to $X$, denoted $F\vert_X$, is defined as follows:
 $$
-\forall F \forall X \left( \mathrm{Func}\left(F\right) \land X \subseteq \mathrm{Dom}\left(F\right) \Longrightarrow F\vert_X := \left\{ p \in F \; \vert \; \exists x \exists y \left( x \in X \land p = \langle x, y \rangle \right) \right\} \right)
+\forall F \forall X \left( \mathrm{Func}\left(F\right) \land X \subseteq \mathrm{Dom}\left(F\right) \Longrightarrow F\vert_X := \left\\{ p \in F \; \vert \; \exists x \exists y \left( x \in X \land p = \langle x, y \rangle \right) \right\\} \right)
 $$
 
 
@@ -56,7 +56,7 @@ A restriction of a function $F$ to $X$ is a function such that $\mathrm{Dom}\lef
 In order to prove this, one may let $F$ be a set such that $\mathrm{Func}\left(F\right)$ and $X$ be a set
 such that $X \subseteq \mathrm{Dom}\left(F\right)$. Hence:
 $$
-\mathrm{Dom}\left(F\vert_X\right) = \left\{ x \in \bigcup \left( \bigcup F\vert_X \right) \; \vert \; \exists y \left( \langle x, y \rangle \in F\vert_X \right) \right\}
+\mathrm{Dom}\left(F\vert_X\right) = \left\\{ x \in \bigcup \left( \bigcup F\vert_X \right) \; \vert \; \exists y \left( \langle x, y \rangle \in F\vert_X \right) \right\\}
 $$
 
 
@@ -67,8 +67,8 @@ Assume that $x$ is a set such that $x \in X \subseteq \mathrm{Dom}\left(F\right)
 $$
 \begin{split}
     & \langle x, y \rangle \in F\vert_X \\
-    \Longrightarrow & \left\{ \left\{x\right\}, \left\{x,y\right\} \right\} \in F\vert_X \\
-    \Longrightarrow & \left\{ x \right\} \in \bigcup F\vert_X \\
+    \Longrightarrow & \left\\{ \left\\{x\right\\}, \left\\{x,y\right\\} \right\\} \in F\vert_X \\
+    \Longrightarrow & \left\\{ x \right\\} \in \bigcup F\vert_X \\
     \Longrightarrow & x \in \bigcup \left( \bigcup F\vert_X \right)
 \end{split}
 $$
@@ -82,7 +82,7 @@ One may then assume that $x$ is a set such that $x \in \mathrm{Dom}\left(F\vert_
 The following are a few notation conventions:
 * $\forall F \forall X \forall Y \left( F: X \rightarrow Y \iff \mathrm{Func}\left(F\right) \land X = \mathrm{Dom}\left(F\right) \land \mathrm{Range}\left(F\right) \subseteq Y \right)$
 * $\forall F \forall X \forall Y \left( F: X \rightarrow Y \Longrightarrow \forall x \forall y \left( F\left(x\right) = y \iff \langle x, y \rangle \in F \right) \right)$
-* $\forall F \forall X \forall Y \left( F: X \rightarrow Y \Longrightarrow \forall A \left( A \subseteq X \Longrightarrow F\left[ A \right] = \left\{ y \in \mathrm{Range}\left(F\right) : \exists x \left( x \in A \land y = f\left(x\right) \right) \right\} \right) \right)$
+* $\forall F \forall X \forall Y \left( F: X \rightarrow Y \Longrightarrow \forall A \left( A \subseteq X \Longrightarrow F\left[ A \right] = \left\\{ y \in \mathrm{Range}\left(F\right) : \exists x \left( x \in A \land y = f\left(x\right) \right) \right\\} \right) \right)$
 
 The following holds:
 $$
@@ -119,10 +119,10 @@ $$
 
 
 ## Surjections
-If one lets $F$, $X$, and $Y$ be sets such that $F: X \rightarrow Y \land Y = \mathrm{Range}\left(F\right)$. Then $F$ is called a function from $X$ <i>onto</i> $Y$, sometimes called a surjection. One may denote this $F\left\{ X \rightarrow Y \right\}$.
+If one lets $F$, $X$, and $Y$ be sets such that $F: X \rightarrow Y \land Y = \mathrm{Range}\left(F\right)$. Then $F$ is called a function from $X$ <i>onto</i> $Y$, sometimes called a surjection. One may denote this $F\left\\{ X \rightarrow Y \right\\}$.
 That is:
 $$
-\forall F \forall X \forall Y \left( F\left\{ X \rightarrow Y \right\} \iff F : X \rightarrow Y \land Y = \mathrm{Range}\left(F\right) \right)
+\forall F \forall X \forall Y \left( F\left\\{ X \rightarrow Y \right\\} \iff F : X \rightarrow Y \land Y = \mathrm{Range}\left(F\right) \right)
 $$
 
 
@@ -133,7 +133,7 @@ $$
  \forall F \forall X \forall Y \left(
         F: X \rightarrow Y \Longrightarrow
         \left(
-            F\left\{ X \rightarrow Y \right\} \iff
+            F\left\\{ X \rightarrow Y \right\\} \iff
             \forall y \left( y \in Y \Longrightarrow
                 \exists x \left(
                     x \in X \land F\left(x\right) = y
@@ -146,7 +146,7 @@ $$
 
 In order to prove this, one may let $F$, $X$ and $Y$ be sets such that $F: X \rightarrow Y$.
 
-Firstly, one may assume that $F\left\{ X \rightarrow Y \right\}$.
+Firstly, one may assume that $F\left\\{ X \rightarrow Y \right\\}$.
 Hence: $\mathrm{Range}\left(F\right) = Y$. Let $y$ be a set such that $y \in Y$, then $y \in \mathrm{Range}\left(F\right)$ and thus: $\exists x \left( \langle x,y \rangle \in F \right)$. Therefore: $F\left(x\right) = y$.
 
 One may then assume that $\forall y \left( y \in Y \Longrightarrow \exists x \left( x \in X \land F\left(x\right) = y \right) \right)$.
@@ -159,17 +159,17 @@ $$
 $$
 
 
-Hence: $Y \subseteq \mathrm{Range}\left(F\right)$ and therefore: $\mathrm{Range}\left(F\right) = Y$ which implies that $F\left\{ X \rightarrow Y \right\}$. $\blacksquare$
+Hence: $Y \subseteq \mathrm{Range}\left(F\right)$ and therefore: $\mathrm{Range}\left(F\right) = Y$ which implies that $F\left\\{ X \rightarrow Y \right\\}$. $\blacksquare$
 
 
 
 
 ## Bijections
-If one lets $F$, $X$, and $Y$ be sets such that $F\left\{X \rightarrow Y\right\} \land \mathrm{Inj}\left(F\right)$.
+If one lets $F$, $X$, and $Y$ be sets such that $F\left\\{X \rightarrow Y\right\\} \land \mathrm{Inj}\left(F\right)$.
 Then $F$ is called a bijection from $X$ onto $Y$. One may denote this $F\left[ X \rightarrow Y \right]$.
 That is:
 $$
-\forall F \forall X \forall Y \left( F\left[ X \rightarrow Y \right] \iff F\left\{ X \rightarrow Y \right\} \land \mathrm{Inj}\left(F\right) \right)
+\forall F \forall X \forall Y \left( F\left[ X \rightarrow Y \right] \iff F\left\\{ X \rightarrow Y \right\\} \land \mathrm{Inj}\left(F\right) \right)
 $$
 
 
@@ -185,7 +185,7 @@ One may then define a function $F \circ G$, called the composition of $F$ and $G
 $$
 \begin{split}
     & \forall F \forall G ( \mathfrak{Com}\left(F, G\right) \Longrightarrow \\
-    & F \circ G = \left\{ p \in \mathrm{Dom}\left(G\right) \times \mathrm{Range}\left(F\right) : \exists x \exists y \left( x \in \mathrm{Dom}\left(G\right) \land y = F\left(G\left(x\right)\right) \land p = \langle x,y \rangle \right) \right\} )
+    & F \circ G = \left\\{ p \in \mathrm{Dom}\left(G\right) \times \mathrm{Range}\left(F\right) : \exists x \exists y \left( x \in \mathrm{Dom}\left(G\right) \land y = F\left(G\left(x\right)\right) \land p = \langle x,y \rangle \right) \right\\} )
 \end{split}
 $$
 
@@ -230,7 +230,7 @@ $$
 $$
 
 
-In order to prove this, one may let $F$ and $G$ be functions such that $\mathfrak{Com}\left(F, G\right)$. Hence: $F \circ G = \left\{ p \in \mathrm{Dom}\left(G\right) \times \mathrm{Range}\left(F\right) : \exists x \exists y \left( x \in \mathrm{Dom}\left(G\right) \land y = F\left(G\left(x\right)\right) \land p = \langle x,y \rangle \right) \right\}$.
+In order to prove this, one may let $F$ and $G$ be functions such that $\mathfrak{Com}\left(F, G\right)$. Hence: $F \circ G = \left\\{ p \in \mathrm{Dom}\left(G\right) \times \mathrm{Range}\left(F\right) : \exists x \exists y \left( x \in \mathrm{Dom}\left(G\right) \land y = F\left(G\left(x\right)\right) \land p = \langle x,y \rangle \right) \right\\}$.
 
 Firstly, one may observe that $\forall p \left( p \in F \circ G \Longrightarrow \exists x \exists y \left( p = \langle x, y \rangle \right) \right)$.
 
@@ -321,7 +321,7 @@ $$
 $$
 
 
-Hence: $\mathrm{Inj}\left(F \circ G\right)$. In addition, let $z$ be a set such that $z \in Z$, then $\exists y \left( y \in Y \land F\left(y\right) = z \right)$. Furthermore, because $y \in Y$ then $\exists x \left( x \in X \land G\left(x\right) = y \right)$. Hence: $F \circ G \left( x \right) = F\left(G\left(x\right)\right) = F\left(y\right) = z$. Therefore: $F \circ G \left\{X \rightarrow Z\right\}$ which implies that $F \circ G \left[X \rightarrow Z\right]$. $\blacksquare$
+Hence: $\mathrm{Inj}\left(F \circ G\right)$. In addition, let $z$ be a set such that $z \in Z$, then $\exists y \left( y \in Y \land F\left(y\right) = z \right)$. Furthermore, because $y \in Y$ then $\exists x \left( x \in X \land G\left(x\right) = y \right)$. Hence: $F \circ G \left( x \right) = F\left(G\left(x\right)\right) = F\left(y\right) = z$. Therefore: $F \circ G \left\\{X \rightarrow Z\right\\}$ which implies that $F \circ G \left[X \rightarrow Z\right]$. $\blacksquare$
 
 ## Permutations
 Let $F$ and $X$ be sets such that $F\left[X \rightarrow X\right]$.
@@ -332,7 +332,7 @@ Then $F$ is called a permutation of $X$.
 ### First Coordinate
 Let $X$ and $Y$ be sets. One may define a function $\pi_1: X \times Y \rightarrow X$ as follows:
 $$
-\pi_1 = \left\{ p \in \left(X \times Y\right) \times X : \exists x \exists y \left( x \in X \land y \in Y \land p = \langle \langle x, y \rangle, x \rangle \right) \right\}
+\pi_1 = \left\\{ p \in \left(X \times Y\right) \times X : \exists x \exists y \left( x \in X \land y \in Y \land p = \langle \langle x, y \rangle, x \rangle \right) \right\\}
 $$
 
 

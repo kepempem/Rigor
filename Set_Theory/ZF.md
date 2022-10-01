@@ -20,7 +20,7 @@ A variable $v$ used in some formula $\phi$ is called bound in $\phi$ if a string
 
 
 ## Notation
-A set with members $a,b,c, \cdots$ can be denoted $\left\{a,b,c,\cdots\right\}$. For example, a set whose only members are $x$ and $y$ can be denoted $\left\{x,y\right\}$.
+A set with members $a,b,c, \cdots$ can be denoted $\left\\{a,b,c,\cdots\right\\}$. For example, a set whose only members are $x$ and $y$ can be denoted $\left\\{x,y\right\\}$.
 
 ### Abbreviations
 
@@ -82,11 +82,11 @@ $$
 
 
 #### Set Builder Notation
-By using the axiom schema of specification, given a set $x$ and a formula $\phi\left(u,p\right)$, one may construct a set consisting of all the members of $x$ that satisfy $\phi$ and denote it $\left\{ u \in x \; : \; \phi\left(u,p\right) \right\}$.
+By using the axiom schema of specification, given a set $x$ and a formula $\phi\left(u,p\right)$, one may construct a set consisting of all the members of $x$ that satisfy $\phi$ and denote it $\left\\{ u \in x \; : \; \phi\left(u,p\right) \right\\}$.
 
 That is:
 $$
-\forall v\left( v \in \left\{ u \in x \; : \; \phi\left(u,p\right) \right\} \iff \left( v \in x \land \phi\left(v,p\right) \right) \right)
+\forall v\left( v \in \left\\{ u \in x \; : \; \phi\left(u,p\right) \right\\} \iff \left( v \in x \land \phi\left(v,p\right) \right) \right)
 $$
 
 
@@ -94,15 +94,15 @@ In addition, by letting $\phi\left( u \right)$ be a formula, the following holds
 
 
 $$
-\forall x \left[ \left( \forall u \left( \phi\left(u,p\right) \Longrightarrow u \in x \right) \right) \Longrightarrow \left( \forall y \left( y \in \left\{ u \in x : \phi\left(u,p\right) \right\} \iff \phi\left( y,p \right) \right) \right) \right]
+\forall x \left[ \left( \forall u \left( \phi\left(u,p\right) \Longrightarrow u \in x \right) \right) \Longrightarrow \left( \forall y \left( y \in \left\\{ u \in x : \phi\left(u,p\right) \right\\} \iff \phi\left( y,p \right) \right) \right) \right]
 $$
 
 
 In order to prove this, one may let $x$ be a set and $\phi\left(u,p\right)$ be a formula such that $\forall u \left( \phi\left(u,p\right) \Longrightarrow u \in x \right)$.
 
-Firstly, one may assume that $y$ is a set such that $y \in \left\{ u \in x : \phi\left(u,p\right) \right\}$. Hence: $y \in x \land \phi\left(y, p\right)$ and thus: $\phi\left(y, p\right)$ holds.
+Firstly, one may assume that $y$ is a set such that $y \in \left\\{ u \in x : \phi\left(u,p\right) \right\\}$. Hence: $y \in x \land \phi\left(y, p\right)$ and thus: $\phi\left(y, p\right)$ holds.
 
-One may then assume that $y$ is a set such that $\phi\left(y,p\right)$ holds. Hence: $y \in x$ which implies that $y \in x \land \phi\left(y,p\right)$. This is equivalent to $y \in \left\{ u \in x : \phi\left(u,p\right) \right\}$.
+One may then assume that $y$ is a set such that $\phi\left(y,p\right)$ holds. Hence: $y \in x$ which implies that $y \in x \land \phi\left(y,p\right)$. This is equivalent to $y \in \left\\{ u \in x : \phi\left(u,p\right) \right\\}$.
 
 
 #### Nonexistence Of The Set Of All Sets
@@ -115,12 +115,12 @@ $$
 
 
 In order to prove this, one may assume that $\exists \mathbb{U} \left( \forall x \left( x \in \mathbb{U} \right) \right)$.
-Hence, by the axiom schema of specification, one may define a set as follows: $S = \left\{ x \in \mathbb{U} : x \not\in x \right\}$. $S$ is a set and thus: $S \in \mathbb{U}$. Therefore: $S \in S \veebar S \not\in S$. If $S \in S$ then, by definition of $S$: $S \not\in S$, a contradiction. If $S \not\in S$ then, by definition of $S$: $S \in S$, also a contradiction. Since each of these leads to a contradiction, $\mathbb{U}$ must not be a set. $\blacksquare$
+Hence, by the axiom schema of specification, one may define a set as follows: $S = \left\\{ x \in \mathbb{U} : x \not\in x \right\\}$. $S$ is a set and thus: $S \in \mathbb{U}$. Therefore: $S \in S \veebar S \not\in S$. If $S \in S$ then, by definition of $S$: $S \not\in S$, a contradiction. If $S \not\in S$ then, by definition of $S$: $S \in S$, also a contradiction. Since each of these leads to a contradiction, $\mathbb{U}$ must not be a set. $\blacksquare$
 
 This is known as *Russell's paradox*.
 
 ### Axiom Of Pairing
-The axiom of pairing states that for any two sets $x$ and $y$, there is a set $z$ such that the members of $z$ are $x$ and $y$ and only them. In other words, for any two sets $x$ and $y$, the set $\left\{x,y\right\}$ exists.
+The axiom of pairing states that for any two sets $x$ and $y$, there is a set $z$ such that the members of $z$ are $x$ and $y$ and only them. In other words, for any two sets $x$ and $y$, the set $\left\\{x,y\right\\}$ exists.
 
 
 $$
@@ -145,22 +145,22 @@ $$
 And thus, by the axiom of extensionality: $z = z^\ast$.
 
 #### Existence Of Singleton
-For any set $x$, the set $\left\{ x \right\}$ that contains $x$ and only $x$ exists.
+For any set $x$, the set $\left\\{ x \right\\}$ that contains $x$ and only $x$ exists.
 
 One may prove this by using the axiom of pairing and the axiom of extensionality.
 
-Firstly, by the axiom of pairing, for any set $x$, the set $\left\{x, x\right\}$ exists. Hence:
+Firstly, by the axiom of pairing, for any set $x$, the set $\left\\{x, x\right\\}$ exists. Hence:
 
 
 $$
 \begin{split}
-    \forall x \forall u ( u \in \left\{x, x\right\} \iff & \left( u = x \lor u = x \right) \\
+    \forall x \forall u ( u \in \left\\{x, x\right\\} \iff & \left( u = x \lor u = x \right) \\
     \iff & u = x )
 \end{split}
 $$
 
 
-Hence, the only member of $\left\{x, x\right\}$ is $x$. Which implies that the set for any $x$, the set $\left\{ x \right\}$ exists and $\left\{ x,x \right\} = \left\{ x \right\}$.
+Hence, the only member of $\left\\{x, x\right\\}$ is $x$. Which implies that the set for any $x$, the set $\left\\{ x \right\\}$ exists and $\left\\{ x,x \right\\} = \left\\{ x \right\\}$.
 
 ### Axiom of Union
 
@@ -184,11 +184,11 @@ $$
 
 
 #### Union Of Sets
-Given two sets $x$ and $y$, one may use the axiom of pairing and observe that the set $\left\{x, y\right\}$ exists and thus, by the axiom of union, the union of $x$ and $y$ exists. Hence, one may let:
+Given two sets $x$ and $y$, one may use the axiom of pairing and observe that the set $\left\\{x, y\right\\}$ exists and thus, by the axiom of union, the union of $x$ and $y$ exists. Hence, one may let:
 
 
 $$
-\forall x \forall y \left( x \cup y := \bigcup \left\{ x,y \right\} \right)
+\forall x \forall y \left( x \cup y := \bigcup \left\\{ x,y \right\\} \right)
 $$
 
 
@@ -197,7 +197,7 @@ Hence:
 
 $$
 \begin{split}
-    \forall x \forall y \forall u ( u \in x \cup y \iff & \exists z \left( z \in \left\{x,y\right\} \land u \in z \right) \\
+    \forall x \forall y \forall u ( u \in x \cup y \iff & \exists z \left( z \in \left\\{x,y\right\\} \land u \in z \right) \\
     \iff & \exists z \left( \left(z = x \lor z = y\right) \land u \in z \right) \\
     \iff & u \in x \lor u \in y )
 \end{split}
@@ -225,7 +225,7 @@ The axiom of infinity states the following:
 
 
 $$
-\exists x \left( \emptyset \in x \land \forall y \left( y \in x \Longrightarrow y \cup \left\{ y \right\} \in x \right) \right)
+\exists x \left( \emptyset \in x \land \forall y \left( y \in x \Longrightarrow y \cup \left\\{ y \right\\} \in x \right) \right)
 $$
 
 
@@ -277,25 +277,25 @@ $$
 $$
 
 
-In order to prove this, one may let $x$ be a set. Therefore, the set $\left\{x\right\}$ exists
-and by the axiom of regularity: $\exists y \left( y \in \left\{x\right\} \land \not\exists z \left( z \in \left\{x\right\} \land z \in y \right) \right)$. Thus, by definition of a singleton: $y = x$ which implies: $\not\exists z \left( z = x \land z \in x \right)$. $\blacksquare$
+In order to prove this, one may let $x$ be a set. Therefore, the set $\left\\{x\right\\}$ exists
+and by the axiom of regularity: $\exists y \left( y \in \left\\{x\right\\} \land \not\exists z \left( z \in \left\\{x\right\\} \land z \in y \right) \right)$. Thus, by definition of a singleton: $y = x$ which implies: $\not\exists z \left( z = x \land z \in x \right)$. $\blacksquare$
 
 ### {x,y} = {z} ⇒ x = y = z
 The following holds:
 
 
 $$
- \forall x \forall y \forall z \left( \left\{ x,y \right\} = \left\{ a \right\} \Longrightarrow x = y = a \right)
+ \forall x \forall y \forall z \left( \left\\{ x,y \right\\} = \left\\{ a \right\\} \Longrightarrow x = y = a \right)
 $$
 
 
-In order to prove this, one may let $x$, $y$, and $z$ be sets such that $\left\{ x,y \right\} = \left\{ a \right\}$.
+In order to prove this, one may let $x$, $y$, and $z$ be sets such that $\left\\{ x,y \right\\} = \left\\{ a \right\\}$.
 Hence, by the axiom of extensionality:
 
 
 $$
 \begin{split}
-    & \forall u ( u \in \left\{ x, y \right\} \iff u \in \left\{ z \right\} \\
+    & \forall u ( u \in \left\\{ x, y \right\\} \iff u \in \left\\{ z \right\\} \\
     \Rightarrow & \forall u \left( \left(u = x \lor u = y\right) \iff u = z \right)
 \end{split}
 $$
@@ -352,7 +352,7 @@ The intersection of two sets $x$ and $y$ is defined as follows:
 
 
 $$
-\forall x \forall y \left( x \cap y := \left\{ u \in x \cup y \; : \; u \in x \land u \in y \right\} \right)
+\forall x \forall y \left( x \cap y := \left\\{ u \in x \cup y \; : \; u \in x \land u \in y \right\\} \right)
 $$
 
 
@@ -360,7 +360,7 @@ In addition, the intersection of all members of a set $x$, denoted $\displaystyl
 
 
 $$
-\forall x \left( \cap \, x := \left\{ u \in \cup \, x \, : \, \forall y \left( y \in x \Longrightarrow u \in y \right) \right\} \right)
+\forall x \left( \cap \, x := \left\\{ u \in \cup \, x \, : \, \forall y \left( y \in x \Longrightarrow u \in y \right) \right\\} \right)
 $$
 
 
@@ -396,20 +396,20 @@ Given two sets $x$ and $y$, the complement of $y$ in $x$, denoted $x \setminus y
 
 
 $$
-\forall x \forall y \left( x \setminus y := \left\{ u \in x \; : \; \lnot\left( u \in y \right) \right\} \right)
+\forall x \forall y \left( x \setminus y := \left\\{ u \in x \; : \; \lnot\left( u \in y \right) \right\\} \right)
 $$
 
 
 ## Ordered Pairs
 
-Let $x$ and $y$ be sets, then by the axiom of pairing, the set $\left\{x, y\right\}$
-exists and the set $\left\{x\right\}$ exists. Hence, also by the axiom of pairing,
-the set $\left\{ \left\{x\right\}, \left\{x, y\right\} \right\}$ exists.
+Let $x$ and $y$ be sets, then by the axiom of pairing, the set $\left\\{x, y\right\\}$
+exists and the set $\left\\{x\right\\}$ exists. Hence, also by the axiom of pairing,
+the set $\left\\{ \left\\{x\right\\}, \left\\{x, y\right\\} \right\\}$ exists.
 One may then define an ordered pair $\langle x,y \rangle$ as follows:
 
 
 $$
-\forall x \forall y \left( \; \langle x,y \rangle := \left\{ \left\{x\right\}, \left\{x, y\right\} \right\} \; \right)
+\forall x \forall y \left( \; \langle x,y \rangle := \left\\{ \left\\{x\right\\}, \left\\{x, y\right\\} \right\\} \; \right)
 $$
 
 
@@ -433,10 +433,10 @@ One of two cases must then be true:
   
   $$
 	\begin{split}
-		\langle x, y \rangle &= \left\{ \left\{x\right\}, \left\{x,y\right\} \right\} \\
-		&= \left\{ \left\{x\right\}, \left\{x,x\right\} \right\} \\
-		&= \left\{ \left\{x\right\}, \left\{x\right\} \right\} \\
-		&= \left\{ \left\{x\right\} \right\} \\
+		\langle x, y \rangle &= \left\\{ \left\\{x\right\\}, \left\\{x,y\right\\} \right\\} \\
+		&= \left\\{ \left\\{x\right\\}, \left\\{x,x\right\\} \right\\} \\
+		&= \left\\{ \left\\{x\right\\}, \left\\{x\right\\} \right\\} \\
+		&= \left\\{ \left\\{x\right\\} \right\\} \\
 	\end{split}
   $$
   
@@ -444,8 +444,8 @@ One of two cases must then be true:
   
   $$
 	\begin{split}
-		& \left\{ \left\{a\right\}, \left\{a,b\right\} \right\} = \left\{ \left\{x\right\} \right\} \\
-		\Rightarrow & \left\{a\right\} = \left\{a,b\right\} = \left\{x\right\} \\
+		& \left\\{ \left\\{a\right\\}, \left\\{a,b\right\\} \right\\} = \left\\{ \left\\{x\right\\} \right\\} \\
+		\Rightarrow & \left\\{a\right\\} = \left\\{a,b\right\\} = \left\\{x\right\\} \\
         \Rightarrow & \left[a = x\right] \land \left[a = b\right] \\
         \Rightarrow & \left[x = a\right] \land \left[x = b\right] \\
 		\Rightarrow & \left[x = a\right] \land \left[y = b\right] \\
@@ -453,7 +453,7 @@ One of two cases must then be true:
   $$
 
 
-* If $\lnot \left( x = y \right)$ then $\left\{ \left\{x\right\}, \left\{x,y\right\} \right\} = \left\{ \left\{a\right\}, \left\{a,b\right\} \right\}$. Assume that $\left\{a,b\right\} = \left\{x\right\}$, then $a = b = x$ which implies $\left\{ \left\{a\right\}, \left\{a,b\right\} \right\} = \left\{ \left\{x\right\}, \left\{x,x\right\} \right\} = \left\{ \left\{x\right\} \right\}$ and thus: $\left\{ \left\{x\right\}, \left\{x,y\right\} \right\} = \left\{ \left\{x\right\} \right\}$ which implies $x = y$, a contradiction to $\lnot \left( x = y \right)$. Assume that $\left\{x,y\right\} = \left\{a\right\}$, then $x = y = a$ which also contradicts $\lnot \left(x = y\right)$. Hence: $\left[ \left\{x\right\} = \left\{a\right\} \Rightarrow x = a \right] \land \left\{x,y\right\} = \left\{a,b\right\} = \left\{x,b\right\}$. If $b = x$ then $\left\{x,y\right\} = \left\{x, b\right\} = \left\{x, x\right\} = \left\{x\right\}$ which implies $x = y$, a contradiction. Hence: $b = y$, as desired.
+* If $\lnot \left( x = y \right)$ then $\left\\{ \left\\{x\right\\}, \left\\{x,y\right\\} \right\\} = \left\\{ \left\\{a\right\\}, \left\\{a,b\right\\} \right\\}$. Assume that $\left\\{a,b\right\\} = \left\\{x\right\\}$, then $a = b = x$ which implies $\left\\{ \left\\{a\right\\}, \left\\{a,b\right\\} \right\\} = \left\\{ \left\\{x\right\\}, \left\\{x,x\right\\} \right\\} = \left\\{ \left\\{x\right\\} \right\\}$ and thus: $\left\\{ \left\\{x\right\\}, \left\\{x,y\right\\} \right\\} = \left\\{ \left\\{x\right\\} \right\\}$ which implies $x = y$, a contradiction to $\lnot \left( x = y \right)$. Assume that $\left\\{x,y\right\\} = \left\\{a\right\\}$, then $x = y = a$ which also contradicts $\lnot \left(x = y\right)$. Hence: $\left[ \left\\{x\right\\} = \left\\{a\right\\} \Rightarrow x = a \right] \land \left\\{x,y\right\\} = \left\\{a,b\right\\} = \left\\{x,b\right\\}$. If $b = x$ then $\left\\{x,y\right\\} = \left\\{x, b\right\\} = \left\\{x, x\right\\} = \left\\{x\right\\}$ which implies $x = y$, a contradiction. Hence: $b = y$, as desired.
 
 Thus: $\forall x \forall y \forall a \forall b \left( \langle x, y \rangle = \langle a, b \rangle \Longrightarrow x = a \land y = b \right)$.
 
@@ -461,8 +461,8 @@ One may then assume that $x$, $y$, $a$, and $b$ are sets such that $x = a \land 
 
 $$
 \begin{split}
-    \langle x, y \rangle &= \left\{ \left\{x\right\}, \left\{x,y\right\} \right\} \\
-    &= \left\{ \left\{a\right\}, \left\{a,b\right\} \right\} \\
+    \langle x, y \rangle &= \left\\{ \left\\{x\right\\}, \left\\{x,y\right\\} \right\\} \\
+    &= \left\\{ \left\\{a\right\\}, \left\\{a,b\right\\} \right\\} \\
     &= \langle a, b \rangle
 \end{split}
 $$
@@ -475,10 +475,10 @@ One may observe the following:
 
 $$
 \begin{split}
-    \forall X \forall Y \forall x \forall y ( x \in X \land y \in Y \Longrightarrow & \, \left\{ x \right\} \subseteq X \cup Y \land \left\{x,y\right\} \subseteq X \cup Y \\
-    \Longrightarrow & \, \left\{ x \right\} \in \mathcal{P}\left(X \cup Y \right) \land \left\{x,y\right\} \in \mathcal{P}\left(X \cup Y \right) \\
-    \Longrightarrow & \, \left\{ \left\{ x \right\}, \left\{x,y\right\} \right\} \subseteq \mathcal{P}\left(X \cup Y \right) \\
-    \Longrightarrow & \, \left\{ \left\{ x \right\}, \left\{x,y\right\} \right\} \in \mathcal{P}\left( \mathcal{P}\left(X \cup Y \right) \right) \\
+    \forall X \forall Y \forall x \forall y ( x \in X \land y \in Y \Longrightarrow & \, \left\\{ x \right\\} \subseteq X \cup Y \land \left\\{x,y\right\\} \subseteq X \cup Y \\
+    \Longrightarrow & \, \left\\{ x \right\\} \in \mathcal{P}\left(X \cup Y \right) \land \left\\{x,y\right\\} \in \mathcal{P}\left(X \cup Y \right) \\
+    \Longrightarrow & \, \left\\{ \left\\{ x \right\\}, \left\\{x,y\right\\} \right\\} \subseteq \mathcal{P}\left(X \cup Y \right) \\
+    \Longrightarrow & \, \left\\{ \left\\{ x \right\\}, \left\\{x,y\right\\} \right\\} \in \mathcal{P}\left( \mathcal{P}\left(X \cup Y \right) \right) \\
     \Longrightarrow & \, \langle x, y \rangle \in \mathcal{P}\left( \mathcal{P}\left(X \cup Y \right) \right) )
 \end{split}
 $$
@@ -490,7 +490,7 @@ Hence, given two sets $X$ and $Y$, one may use the axiom schema of specification
 
 
 $$
-\forall X \forall Y \left( X \times Y := \left\{ u \in \mathcal{P}\left( \mathcal{P}\left(X \cup Y \right) \right) \; : \; \exists x \exists y \left( x \in X \land y \in Y \land u = \langle x, y \rangle \right) \right\} \right)
+\forall X \forall Y \left( X \times Y := \left\\{ u \in \mathcal{P}\left( \mathcal{P}\left(X \cup Y \right) \right) \; : \; \exists x \exists y \left( x \in X \land y \in Y \land u = \langle x, y \rangle \right) \right\\} \right)
 $$
 
 
